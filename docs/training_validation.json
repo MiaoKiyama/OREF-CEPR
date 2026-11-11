@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-10",
+  "original_dino_tests": 22,
+  "original_mos_tests": 9,
+  "original_oref_protocol_suite": "passed",
+  "dino_saved_fold_plan_matches": 15,
+  "mos_saved_fold_plan_matches": 15,
+  "real_full120_dino_and_mos_samples": "passed",
+  "relocated_mos_and_fold0_dino_bindings": "passed",
+  "repository_smoke_tests": 4,
+  "diagnostic_cpp_graph_groups": 1024,
+  "full_training_rerun": false,
+  "scope_cleanup": {
+    "retained_sources": [
+      "oof120",
+      "replay120"
+    ],
+    "retained_model": "graphQS",
+    "protected_computational_blocks": 29,
+    "synthetic_optimizer_steps_per_pool": 4,
+    "synthetic_before_after_exact": true,
+    "real_input_before_after_exact": true,
+    "full_training_rerun": false,
+    "scope_tests": 6,
+    "public_cli_entries": 7,
+    "original_dino_tests": 22,
+    "original_mos_tests": 9,
+    "native_dependencies": "compiled and checked"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "system": "You are annotating remote-sensing semantic attributes, not evaluating a classifier. Return exactly one JSON object with all 18 attribute IDs below as explicit keys. Each entry must be integer 1, integer 0, or JSON null. No explanation. 1 means supported/characteristic, 0 means supported absence/non-characteristic, null means unknown, variable, not applicable, or not visually distinguishable. Do not invent evidence. Attribute order:\n0: cover_open_water (覆盖：开放水面)\n1: cover_woody_vegetation (覆盖：木本植被)\n2: cover_low_vegetation (覆盖：草本或低矮作物)\n3: cover_bare_mineral (覆盖：裸露土壤或岩石)\n4: cover_impervious (覆盖：建筑或硬化地表)\n5: cover_snow_ice (覆盖：积雪或冰雪)\n6: shape_linear_network (形态：线状或网络)\n7: shape_repeated_regular_units (形态：规则重复单元)\n8: shape_composite_site (形态：多种基础覆盖组成的场所)\n9: function_agriculture (功能：农业生产)\n10: function_residential (功能：居住)\n11: function_transport (功能：交通运输)\n12: function_recreation_public_space (功能：休闲运动或公共活动空间)\n13: function_industrial (功能：工业生产)\n14: management_water_supply (管理：农业/养殖水管理)\n15: management_vegetation (管理：有意栽培或维护植被)\n16: woody_tree_height_form (结构：乔木而非灌木)\n17: spatial_context_important (上下文：局部外观通常不足)",
+  "user": "Image 1 is the RGB context (512x512). Image 2 is its central target (256x256), Both views are aspect-preserving resized from a fixed geographic grid cell, with black padding outside the image. Image 2 shows the FULL grid cell, not a native 256-pixel crop. Describe attributes supported for the CENTRAL TARGET region, using context only to clarify spatial structure. This region may mix multiple covers; this is regional context, not a per-pixel label. For cover attributes, 1 means a substantial visible component; 0 only if visibly absent; otherwise null. Function, land management, water supply, residential/industrial use, and tree height must be null unless directly and unambiguously evidenced. Do not infer ground truth, model accuracy, or SAR usefulness. No class predictions are provided.",
+  "visual_postprocess": {
+    "visible_attribute_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "forced_unknown_indices": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 384,
+    "enable_thinking": false,
+    "batch_size": 1,
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  }
+}

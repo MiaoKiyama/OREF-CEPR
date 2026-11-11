@@ -1,0 +1,143 @@
+experiment:
+  name: tcmmsline3_region_fusion
+  output_dir: ${TCMMS_OUTPUT_ROOT:-outputs}/region_fusion
+  seed: 3407
+
+data:
+  root: ${TCMMS_DATA_ROOT:-D:/gf2128msandsar}
+  expected_scene_count: 128
+  max_time_gap_days: 20.0
+  require_full_manifest_coverage: true
+  patch_size: 128
+  sar_size: 32
+  # A 128 px GF-2 patch spans 414.72 m. Forty-one cells preserve the
+  # standalone Sentinel-1 support at approximately 10.12 m/cell.
+  sar_native_size: 41
+  samples_per_epoch: 6144
+  eval_patches_per_scene: 64
+  min_labeled_fraction: 0.05
+  sampling_attempts: 12
+  num_workers: 8
+  sampling:
+    strategy: uniform
+  normalization:
+    ms:
+      divisor: 1200.0
+      mean: [0.3500461829, 0.2677396190, 0.2033936715, 0.2511862890]
+      std: [0.0929755440, 0.0770208792, 0.0811188973, 0.1158742198]
+    sar:
+      db_min: -40.0
+      db_max: 10.0
+  train_scene_ids:
+    [647767, 647768, 647770, 647892, 658636, 658637, 789259,
+     958144, 958146, 1015594, 1015596, 1015597, 1015646, 1015648,
+     1015649, 1028977, 1035795, 1037899, 1038935, 1038936, 1064454,
+     1064469, 1094941, 1104323, 1112719, 1116443, 1116444, 1118839,
+     1119057, 1119060, 1140983, 1169100, 1246644, 1246645, 1251799,
+     1251800, 1293546, 1335463, 1336975, 1344822, 1348919, 1393716,
+     1416129, 1416140, 1448894, 1457157, 1471230, 1471436, 1490885,
+     1491417, 1491423, 1491484, 1517494, 1517689, 1537636, 1537637,
+     1537716, 1566653, 1566654, 1573999, 1574001, 1633212, 1660727,
+     1668457, 1668483, 1670888, 1680851, 1680853, 1680857, 1680858,
+     1723989, 1723991, 1746797, 1757317, 1757320, 1757429, 1757483,
+     1757484, 1765570, 1765572, 1765574, 1767953, 1768200, 1787080,
+     1787089, 1787564, 1787577, 1792971, 1793003, 1798942, 1798945,
+     1799009, 1799010, 1799015, 1876775, 1886305]
+  val_scene_ids:
+    [564539, 564691, 564692, 575925, 1092725, 1167480, 1395956,
+     1396034, 1396036, 1396037, 1396040, 1562063, 1563129, 1577567,
+     1734328, 1910522]
+  test_scene_ids:
+    [1206072, 1217916, 1366278, 1366284, 1367840, 1367842, 1432972,
+     1465929, 1553848, 1591676, 1625023, 1708230, 1708232, 1708259,
+     1708261, 1838560]
+
+model:
+  num_classes: 24
+  width: 32
+  fusion_mode: region
+  region_grid: 4
+  attention_heads: 4
+  max_sar_residual_scale: 1.0
+  initial_sar_residual_scale: 0.1
+  adapter_bottleneck: 16
+  expert_hidden: 64
+  router_hidden: 64
+  router_grid: 8
+  routing_mode: learned
+  router_include_both: false
+  router_initial_both_probability: 0.0
+  boundary_attenuation: 0.0
+  bounded_alignment_enabled: false
+  max_alignment_offset_pixels: 1.0
+
+loss:
+  class_weights:
+    [0.5, 0.5, 0.5, 0.5, 0.584109, 0.5, 0.5, 2.284832,
+     0.5, 0.755928, 0.5, 0.5, 0.5, 0.567774, 0.518280, 2.5,
+     0.5, 0.5, 2.5, 2.5, 0.5, 1.050195, 1.828274, 1.732263]
+  cross_entropy_weight: 1.0
+  dice_weight: 0.5
+  ms_aux_weight: 0.3
+  sar_aux_weight: 0.1
+  sar_native_aux_weight: 0.0
+  sar_native_min_purity: 0.6
+  prototype_alignment_weight: 0.05
+  private_orthogonality_weight: 0.02
+  negative_transfer_weight: 0.05
+  utility_routing_weight: 0.0
+  route_utility_margin: 0.0
+  route_target_mode: hard
+  route_utility_temperature: 1.0
+  route_min_class_region_pixels: 1
+  route_min_utility_gap: 0.0
+  route_relative_utility: false
+  negative_transfer_reduction: pixel
+  negative_transfer_min_pixels: 1
+  alignment_offset_weight: 0.0
+  teacher_distillation_weight: 0.2
+  distillation_temperature: 2.0
+
+train:
+  device: auto
+  epochs: 64
+  batch_size: 12
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  warmup_epochs: 4
+  gradient_clip_norm: 1.0
+  amp: true
+  sar_dropout_probability: 0.15
+  sar_noise_probability: 0.0
+  sar_noise_std: 0.0
+  sar_shift_probability: 0.0
+  sar_shift_max_pixels: 0
+  sar_pretrain_epochs: 0
+  router_warmup_epochs: 0
+  freeze_modules: []
+  staged_unfreeze_modules: []
+  staged_unfreeze_epoch:
+  staged_lr_multiplier: 0.1
+  initialization_checkpoint:
+  initialization_exclude_prefixes: []
+  ms_initialization_checkpoint:
+  sar_initialization_checkpoint:
+  trainable_modules: []
+  teacher_checkpoint:
+  resume_checkpoint:
+  auto_resume: true
+  # Zero preserves legacy epoch-boundary checkpoints. Long formal runs may
+  # opt into optimizer-boundary recovery checkpoints explicitly.
+  recovery_checkpoint_interval_steps: 0
+  checkpoint_every: 8
+
+inference:
+  batch_size: 12
+  max_windows_per_scene:
+
+analysis:
+  boundary_f1_tolerance_ms_pixels: 3
+  component_scale:
+    enabled: false
+    class_ids: [10, 12, 13, 14]
+    area_thresholds_m2: [10000.0, 100000.0]

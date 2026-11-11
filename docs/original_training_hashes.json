@@ -1,0 +1,717 @@
+{
+  "training_original/dino/tcmmsline3/data.py": {
+    "sha256": "58da79b9587a4d0ac781f4de8c33d3fbcaaa0bff76c473e164174f7c213b7341",
+    "source": "dino/tcmmsline3/data.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_neutral_oof.py": {
+    "sha256": "c80193e365a10d203cfeb80a3e4b09e819ad4335a263b6935cb2f5a93d96d012",
+    "source": "dino/tcmmsline3/ms75_neutral_oof.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_data.py": {
+    "sha256": "d6354573a0b9b7b6bff4741f55acb3ef4fa75bf532b379d2d8848fd8305520f9",
+    "source": "dino/tcmmsline3/ms75_data.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_aligned_protocol.py": {
+    "sha256": "5f2accd2cd2b01ba5f5b2069152ce06dcf44e0e0d7b8e9a9936fd86659072154",
+    "source": "dino/tcmmsline3/ms75_aligned_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_oof_source_protocol.py": {
+    "sha256": "37a4dc59f63f21b775780c9047631a569f7bf32d314f3d4fdd7791f002928f0c",
+    "source": "dino/tcmmsline3/ms75_oof_source_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/runtime.py": {
+    "sha256": "a515a1cece0eee57408292642f0dd8d53391465b8ff976d118ffaa0a4a726a48",
+    "source": "dino/tcmmsline3/runtime.py"
+  },
+  "training_original/dino/tools/train_dino_web.py": {
+    "sha256": "c59e4f437495f992b573818a3582b8a08cbd2bef675edb6b9d5f9b42896f6120",
+    "source": "dino/tools/train_dino_web.py"
+  },
+  "training_original/dino/tcmmsline3/dino_web_model.py": {
+    "sha256": "dcaf26f4b76baad01ab82aa99544bc283b26f4fd2154353522750a6c28c79c3d",
+    "source": "dino/tcmmsline3/dino_web_model.py"
+  },
+  "training_original/dino/tcmmsline3/dinov2_nir_model.py": {
+    "sha256": "30fbeb410121aa71cbe4796d4eb06ae64b4ae36290a46c5851c8227b7c1301e9",
+    "source": "dino/tcmmsline3/dinov2_nir_model.py"
+  },
+  "training_original/dino/tcmmsline3/dino_web_protocol.py": {
+    "sha256": "56d5118ed9a318c02aa92406dc9e3cb1e0c6ddc0843319698bd0b49db97ed094",
+    "source": "dino/tcmmsline3/dino_web_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/dino_web_data.py": {
+    "sha256": "80715f176b3e4d4a374df50c7abc60bb38d04b4604b9c9489d3e2b8dd8bf2176",
+    "source": "dino/tcmmsline3/dino_web_data.py"
+  },
+  "training_original/dino/tcmmsline3/dinov3_sat_nir_full120_data.py": {
+    "sha256": "5b6f73666e5fb1a13e8a302dd15d05d319e08b0025f2b89535b9b7f0a6c62b92",
+    "source": "dino/tcmmsline3/dinov3_sat_nir_full120_data.py"
+  },
+  "training_original/dino/tcmmsline3/dinov3_sat_nir_protocol.py": {
+    "sha256": "420d84790441f2ff0320c18bc8b44bd81dfb783d7686d54d7a88ae8ed6b5e090",
+    "source": "dino/tcmmsline3/dinov3_sat_nir_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/dinov3_sat_nir_model.py": {
+    "sha256": "0391fa9fc2848326ede358ee6d1ff683ec4aafe60db7bb44a60be158ba5ea389",
+    "source": "dino/tcmmsline3/dinov3_sat_nir_model.py"
+  },
+  "training_original/dino/tcmmsline3/dinov3_sat_nir_full120_protocol.py": {
+    "sha256": "6bae2e5b74463c67600d704c3593bfe90e4cf304bb4acfb917083ab05d15a42a",
+    "source": "dino/tcmmsline3/dinov3_sat_nir_full120_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/dinov3_sat_nir_data.py": {
+    "sha256": "8547635dba1d38bb192d67ef86245a18335f4090ca1dd8fed951810162ba3b4b",
+    "source": "dino/tcmmsline3/dinov3_sat_nir_data.py"
+  },
+  "training_original/dino/train.py": {
+    "sha256": "edd16afcdebda88ccd4420e60a319c10aaf0dfe0d772983d99245a3b15fc0941",
+    "source": "TCMMSline3_dino_web_v2l_full120_gpu7_20260917_v1/train.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_aligned_proxy.py": {
+    "sha256": "1442945ac7540790c89e1e677042b278471c9cd1fed7ade122c6db26f4f4681e",
+    "source": "dino/tcmmsline3/ms75_aligned_proxy.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_model.py": {
+    "sha256": "5a7048d8f062e649a77fd61fa243bdac821de9c1b55e802ce67612f2d1fa72ce",
+    "source": "dino/tcmmsline3/ms75_model.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_castr.py": {
+    "sha256": "ef0177fcbd6d54ae7b878a5e8eadc1a40fa461bb7303ed4fe53385b766f95b9c",
+    "source": "dino/tcmmsline3/ms75_castr.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_paired_protocol.py": {
+    "sha256": "9375802fe4c823a2dd02a813d7edaf9c179c9d910bc990ea872c73adb6f3844a",
+    "source": "dino/tcmmsline3/ms75_paired_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_protocol.py": {
+    "sha256": "ad34211510c83c1f7da5d9bbaff21ea7c39812041b1bf33274325fd3a9e17b39",
+    "source": "dino/tcmmsline3/ms75_protocol.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_paired_decision.py": {
+    "sha256": "16ab1fd0b78f0d7b6db2e93862c28f76c624b7bb4e7d6a769713325407bd9dcb",
+    "source": "dino/tcmmsline3/ms75_paired_decision.py"
+  },
+  "training_original/dino/tcmmsline3/ms75_checkpoint.py": {
+    "sha256": "8d5f1a6ffe1a79bed888c16fd95b819f62e991f268218426c05dec87d284ca7d",
+    "source": "dino/tcmmsline3/ms75_checkpoint.py"
+  },
+  "training_original/dino/tcmmsline3/model.py": {
+    "sha256": "5f5b25a3c7c29879b9354936a36626c3b1270cc7a76b4b38c92e5ac884b2b281",
+    "source": "dino/tcmmsline3/model.py"
+  },
+  "training_original/dino/tcmmsline3/local_detail_model.py": {
+    "sha256": "e674d7692bcfc38e2e537b9af2badefd343a9fa6b0eaa00da5234535ca9b750e",
+    "source": "dino/tcmmsline3/local_detail_model.py"
+  },
+  "training_original/dino/tcmmsline3/hrnet_ocr_model.py": {
+    "sha256": "42e6d8425df65a759cf4293b06280bd8d0cef9588af8353eacf069464214c4b2",
+    "source": "dino/tcmmsline3/hrnet_ocr_model.py"
+  },
+  "training_original/dino/tcmmsline3/metrics.py": {
+    "sha256": "e09edb14b917c48529bb185e2a8286f93eca690aeb694bd87dfab6f2619518c7",
+    "source": "dino/tcmmsline3/metrics.py"
+  },
+  "training_original/dino/tcmmsline3/losses.py": {
+    "sha256": "0bf3646cc75b709c7de1590cc903498e4427122f0e73929869d56a099bb5bd1b",
+    "source": "dino/tcmmsline3/losses.py"
+  },
+  "training_original/dino/tcmmsline3/fusionaware_a1.py": {
+    "sha256": "93ecf9979c62088140d776a3b4a9eca376a6193a417155f4cec0992b90f8bd32",
+    "source": "dino/tcmmsline3/fusionaware_a1.py"
+  },
+  "training_original/dino/tcmmsline3/config.py": {
+    "sha256": "ee105c7784bc13847b7b327c32ed3289a4be5541b2ef6fa38a17aaad655198b9",
+    "source": "dino/tcmmsline3/config.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_sar_full120_data.py": {
+    "sha256": "119e32870f84c934ec245798fbb6298a150e2ddd7b551c776851ee6338c3400d",
+    "source": "mos/tcmmsline3/convnext_sar_full120_data.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_sar_model.py": {
+    "sha256": "570fa49069d528980899449508690166610f964da48be46dad8d92002f5d11ac",
+    "source": "mos/tcmmsline3/convnext_sar_model.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_pyramid_model.py": {
+    "sha256": "8fec64448ff37df1ee044624eac0137c9c8b2ad453f7f4bcad8dee743c4b17e6",
+    "source": "mos/tcmmsline3/convnext_pyramid_model.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_sar_joint_model.py": {
+    "sha256": "95bd419bc0f22cfd06a5723b5f78d8d101dab27440ccf6dbf9e0eedf51c22d40",
+    "source": "mos/tcmmsline3/ms75_sar_joint_model.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_model.py": {
+    "sha256": "f7714cb0afab1c3c663e5bd6fb6aa3c2bc6e09a00c0f14a0f1efe3842fadf0fe",
+    "source": "mos/tcmmsline3/ms75_model.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_castr.py": {
+    "sha256": "ef0177fcbd6d54ae7b878a5e8eadc1a40fa461bb7303ed4fe53385b766f95b9c",
+    "source": "mos/tcmmsline3/ms75_castr.py"
+  },
+  "training_original/mos/tcmmsline3/joint_sar_model.py": {
+    "sha256": "f03350c3042773699751a9e5447d64f026bad8a5ec9097704b6c649ea72a2064",
+    "source": "mos/tcmmsline3/joint_sar_model.py"
+  },
+  "training_original/mos/tcmmsline3/semantic_aux_model.py": {
+    "sha256": "9fbf4ea351b230b97e0aa994c456b1e5eacd9a6bd55f181a27a9191bb4406729",
+    "source": "mos/tcmmsline3/semantic_aux_model.py"
+  },
+  "training_original/mos/tcmmsline3/native_sar_adapter.py": {
+    "sha256": "faa9822be5b5e389e350eb0d579746b97e04c33bdbfd08b59680c51be2251fb3",
+    "source": "mos/tcmmsline3/native_sar_adapter.py"
+  },
+  "training_original/mos/tcmmsline3/dinov2_nir_optim.py": {
+    "sha256": "a90160c547c5059cf7d62acc0a46196782ccab5bc020f67d9c128e2e9c251610",
+    "source": "mos/tcmmsline3/dinov2_nir_optim.py"
+  },
+  "training_original/mos/tcmmsline3/dinov2_nir_model.py": {
+    "sha256": "30fbeb410121aa71cbe4796d4eb06ae64b4ae36290a46c5851c8227b7c1301e9",
+    "source": "mos/tcmmsline3/dinov2_nir_model.py"
+  },
+  "training_original/mos/tcmmsline3/light_sar_data.py": {
+    "sha256": "3763b9d9f2055184ce01c62e2e1223aef86164cc0ed7d794484d0780664c793e",
+    "source": "mos/tcmmsline3/light_sar_data.py"
+  },
+  "training_original/mos/tcmmsline3/semantic_aux_data.py": {
+    "sha256": "2a626b303b71aa6eb35797d4a83beb9a160538a23369df6813c9fa8cc5b1ba83",
+    "source": "mos/tcmmsline3/semantic_aux_data.py"
+  },
+  "training_original/mos/tcmmsline3/dual_aux_data.py": {
+    "sha256": "de9ffd3bf734d13ed5d2f28161aaf5556ad9e3741e6c67e6ae22d8f594c9ffac",
+    "source": "mos/tcmmsline3/dual_aux_data.py"
+  },
+  "training_original/mos/tcmmsline3/target_dino_data.py": {
+    "sha256": "dd45438436c963e23a148ed800658571b5b91ec68d17cc47383b85021b0e0f0c",
+    "source": "mos/tcmmsline3/target_dino_data.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_rebuild_data.py": {
+    "sha256": "f9c5c52fa254b1c85b85b9551e14fadaf26801b95e611c1dda6c1cd8b3395be2",
+    "source": "mos/tcmmsline3/ms75_rebuild_data.py"
+  },
+  "training_original/mos/tcmmsline3/target_ms75_data.py": {
+    "sha256": "e447b10fa1b8e37049e03a5974ed07dda3cde2bf024b9e63b7b659ca6f478f01",
+    "source": "mos/tcmmsline3/target_ms75_data.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_sar_pilot_data.py": {
+    "sha256": "c02a8958638893f1186dd6de70e845b78cb509625cf414745d27bfc9c79492d8",
+    "source": "mos/tcmmsline3/ms75_sar_pilot_data.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_sar_joint_data.py": {
+    "sha256": "80f473e7b38e12ed6198af2ffc868ff9506f88094931ce15ac0d8c32655256b7",
+    "source": "mos/tcmmsline3/ms75_sar_joint_data.py"
+  },
+  "training_original/mos/tcmmsline3/data.py": {
+    "sha256": "58da79b9587a4d0ac781f4de8c33d3fbcaaa0bff76c473e164174f7c213b7341",
+    "source": "mos/tcmmsline3/data.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_neutral_oof.py": {
+    "sha256": "c80193e365a10d203cfeb80a3e4b09e819ad4335a263b6935cb2f5a93d96d012",
+    "source": "mos/tcmmsline3/ms75_neutral_oof.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_data.py": {
+    "sha256": "d6354573a0b9b7b6bff4741f55acb3ef4fa75bf532b379d2d8848fd8305520f9",
+    "source": "mos/tcmmsline3/ms75_data.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_aligned_protocol.py": {
+    "sha256": "5f2accd2cd2b01ba5f5b2069152ce06dcf44e0e0d7b8e9a9936fd86659072154",
+    "source": "mos/tcmmsline3/ms75_aligned_protocol.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_oof_source_protocol.py": {
+    "sha256": "37a4dc59f63f21b775780c9047631a569f7bf32d314f3d4fdd7791f002928f0c",
+    "source": "mos/tcmmsline3/ms75_oof_source_protocol.py"
+  },
+  "training_original/mos/tcmmsline3/runtime.py": {
+    "sha256": "a515a1cece0eee57408292642f0dd8d53391465b8ff976d118ffaa0a4a726a48",
+    "source": "mos/tcmmsline3/runtime.py"
+  },
+  "training_original/mos/tools/train_convnext_upgrade_full120.py": {
+    "sha256": "988262430ccf5012e6a17a6162d009757d088efbc00e03d422b2a6c46447ba52",
+    "source": "mos/tools/train_convnext_upgrade_full120.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_paired_model.py": {
+    "sha256": "79c10596daa6ddd02ee8abf6f5fe3474b78bbde2a1bdfd2b4c8e61e191d5d385",
+    "source": "mos/tcmmsline3/convnext_paired_model.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_upgrade_data.py": {
+    "sha256": "4d6d971baaa9aa37b1d93bd3a701bb264f4b1c0c4be239b5c0ed692f239a374d",
+    "source": "mos/tcmmsline3/convnext_upgrade_data.py"
+  },
+  "training_original/mos/tcmmsline3/convnext_context_model.py": {
+    "sha256": "cc874dfa91c42c89c5db4234ea1bcd10ebaa5541815332352bf566daa2edd175",
+    "source": "mos/tcmmsline3/convnext_context_model.py"
+  },
+  "training_original/mos/tools/sar_oct01_extension.py": {
+    "sha256": "24f4cbd605da0a14f28a3fc7e44d45dd27412b77a61222da0ad8f2e1cf34eca7",
+    "source": "mos/tools/sar_oct01_extension.py"
+  },
+  "training_original/mos/tools/sar_oct01_common.py": {
+    "sha256": "8644553c7e15e87218ebe6b5c537d42f3f343376d2079ad55dcb7e386e8f4a8e",
+    "source": "mos/tools/sar_oct01_common.py"
+  },
+  "training_original/mos/tools/run_sar_route_diagnostics.py": {
+    "sha256": "51334f93c9f48d2da153be246f4f7c46cff7e3e81eb2a0001ab93ae6882c5463",
+    "source": "mos/tools/run_sar_route_diagnostics.py"
+  },
+  "training_original/mos/tools/launch_without_thp.py": {
+    "sha256": "da2368d8fd9168da19043880ad1104a15826b37df38c94339dabf291f5a8fcdf",
+    "source": "mos/tools/launch_without_thp.py"
+  },
+  "training_original/mos/tools/audit_convnext_sar_inputs.py": {
+    "sha256": "4e89d78f717ccd4d261840e6f6844d54ba268c6506e54250f1cc3ca495ca5ee2",
+    "source": "mos/tools/audit_convnext_sar_inputs.py"
+  },
+  "training_original/mos/tools/train_convnext_sar.py": {
+    "sha256": "ffcdf7c804bf94e1d042da71e4beacda166c3f4a4841d33cb575b1b02aad1c66",
+    "source": "mos/tools/train_convnext_sar.py"
+  },
+  "training_original/mos/tcmmsline3/losses.py": {
+    "sha256": "0bf3646cc75b709c7de1590cc903498e4427122f0e73929869d56a099bb5bd1b",
+    "source": "mos/tcmmsline3/losses.py"
+  },
+  "training_original/mos/tcmmsline3/fusionaware_a1.py": {
+    "sha256": "93ecf9979c62088140d776a3b4a9eca376a6193a417155f4cec0992b90f8bd32",
+    "source": "mos/tcmmsline3/fusionaware_a1.py"
+  },
+  "training_original/mos/tools/train_ms75_sar_joint.py": {
+    "sha256": "9afb26143b12dd681d1fff85d6b907f49095654a722c99ee59ed11b0f897c841",
+    "source": "mos/tools/train_ms75_sar_joint.py"
+  },
+  "training_original/mos/tcmmsline3/model.py": {
+    "sha256": "5f5b25a3c7c29879b9354936a36626c3b1270cc7a76b4b38c92e5ac884b2b281",
+    "source": "mos/tcmmsline3/model.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_aligned_proxy.py": {
+    "sha256": "1442945ac7540790c89e1e677042b278471c9cd1fed7ade122c6db26f4f4681e",
+    "source": "mos/tcmmsline3/ms75_aligned_proxy.py"
+  },
+  "training_original/mos/tcmmsline3/local_detail_model.py": {
+    "sha256": "e674d7692bcfc38e2e537b9af2badefd343a9fa6b0eaa00da5234535ca9b750e",
+    "source": "mos/tcmmsline3/local_detail_model.py"
+  },
+  "training_original/mos/tcmmsline3/hrnet_ocr_model.py": {
+    "sha256": "42e6d8425df65a759cf4293b06280bd8d0cef9588af8353eacf069464214c4b2",
+    "source": "mos/tcmmsline3/hrnet_ocr_model.py"
+  },
+  "training_original/mos/tools/train_target_dino.py": {
+    "sha256": "e0c2b6aabc1bb53a0d984b30e4ac5048c219df1597d715550a079f78291740f6",
+    "source": "mos/tools/train_target_dino.py"
+  },
+  "training_original/mos/tcmmsline3/target_dino_model.py": {
+    "sha256": "5a485ef48cd0dc5e4be52e60d0603f057e644e03479ddf394eb65b1d3a4f3ec5",
+    "source": "mos/tcmmsline3/target_dino_model.py"
+  },
+  "training_original/mos/tcmmsline3/dino_web_model.py": {
+    "sha256": "dcaf26f4b76baad01ab82aa99544bc283b26f4fd2154353522750a6c28c79c3d",
+    "source": "mos/tcmmsline3/dino_web_model.py"
+  },
+  "training_original/mos/tools/evaluate_target_dino.py": {
+    "sha256": "72e34ff4ad4faf22c2d178e3f857da8415624656e4c5b1c69f0bc0696d0b34a5",
+    "source": "mos/tools/evaluate_target_dino.py"
+  },
+  "training_original/mos/tools/evaluate_convnext_sar.py": {
+    "sha256": "eae9dda86513d5afe11f4bdab06322f137b797f0b6e55081594b4e4c166f7e37",
+    "source": "mos/tools/evaluate_convnext_sar.py"
+  },
+  "training_original/mos/tools/evaluate_ms75_sar_joint.py": {
+    "sha256": "96686ab15cc0c9b3ce1a3a1055ce3c1fdcfa8fae19e0b6e3ca44fec3b5fbf1f5",
+    "source": "mos/tools/evaluate_ms75_sar_joint.py"
+  },
+  "training_original/mos/tools/evaluate_ms75_sar_pilot.py": {
+    "sha256": "47fc5353984eded7683c0c4b6c03f9f289f622d3a28ba0065ec893bcdca133a8",
+    "source": "mos/tools/evaluate_ms75_sar_pilot.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_rebuild_model.py": {
+    "sha256": "6157a82446aa849de74b5dffe2b9d4000d3c9c7b4866ec2299125026773f68a6",
+    "source": "mos/tcmmsline3/ms75_rebuild_model.py"
+  },
+  "training_original/mos/tools/train_ms75_sar_pilot.py": {
+    "sha256": "c0eb68856cf57d784ebeb002f7a210d1088e6608b140f8dbf6ec4c3a1a35d55f",
+    "source": "mos/tools/train_ms75_sar_pilot.py"
+  },
+  "training_original/mos/tcmmsline3/ms75_sar_pilot_model.py": {
+    "sha256": "dffc3c396e7d776eee9f251202d507c2cbd841e490cf136498b39ccb4ec783d6",
+    "source": "mos/tcmmsline3/ms75_sar_pilot_model.py"
+  },
+  "training_original/mos/tools/evaluate_ms75_rebuild.py": {
+    "sha256": "ee1db8e2f5931502baff5dde3bc0f258d78d74baf78550ab6620ca4d517a8a9e",
+    "source": "mos/tools/evaluate_ms75_rebuild.py"
+  },
+  "training_original/mos/tcmmsline3/sar_route_diagnostics.py": {
+    "sha256": "5dafe0cd68aeb564a938235726585caafbcf2abf5ab3972608d2c4f136c1b847",
+    "source": "mos/tcmmsline3/sar_route_diagnostics.py"
+  },
+  "training_original/mos/tcmmsline3/sar_oct01_models.py": {
+    "sha256": "7519d465def37659e14185d9465452d8da7493c63769779e19533311cf0d5a84",
+    "source": "mos/tcmmsline3/sar_oct01_models.py"
+  },
+  "training_original/mos/tools/native24_retrain_limited.py": {
+    "sha256": "e5730718d43544202171f8ef8f31940eb1ab04be14248956be0955ee06372555",
+    "source": "mos/tools/native24_retrain_limited.py"
+  },
+  "training_original/fivefold/tools/native24_oof_data.py": {
+    "sha256": "1482cc5a1c4f1211a1237db7b297d4685e1761d4e1ce2c60a88bf9247da4b47f",
+    "source": "fivefold/tools/native24_oof_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/convnext_sar_full120_data.py": {
+    "sha256": "119e32870f84c934ec245798fbb6298a150e2ddd7b551c776851ee6338c3400d",
+    "source": "fivefold/tcmmsline3/convnext_sar_full120_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/native24_oof_dino.py": {
+    "sha256": "eb8d53214310f6ecca746e6efb1816d7c1848c9c0a044f8395f3f4c65f4e9b72",
+    "source": "fivefold/tcmmsline3/native24_oof_dino.py"
+  },
+  "training_original/fivefold/tcmmsline3/native24_fast_data.py": {
+    "sha256": "37ee1b2e905ddd1450c299a8d2ddb8e390dcd99d232d2764208487d8c18027b5",
+    "source": "fivefold/tcmmsline3/native24_fast_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/convnext_sar_model.py": {
+    "sha256": "570fa49069d528980899449508690166610f964da48be46dad8d92002f5d11ac",
+    "source": "fivefold/tcmmsline3/convnext_sar_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/convnext_pyramid_model.py": {
+    "sha256": "8fec64448ff37df1ee044624eac0137c9c8b2ad453f7f4bcad8dee743c4b17e6",
+    "source": "fivefold/tcmmsline3/convnext_pyramid_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_sar_joint_model.py": {
+    "sha256": "95bd419bc0f22cfd06a5723b5f78d8d101dab27440ccf6dbf9e0eedf51c22d40",
+    "source": "fivefold/tcmmsline3/ms75_sar_joint_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_model.py": {
+    "sha256": "f7714cb0afab1c3c663e5bd6fb6aa3c2bc6e09a00c0f14a0f1efe3842fadf0fe",
+    "source": "fivefold/tcmmsline3/ms75_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_castr.py": {
+    "sha256": "ef0177fcbd6d54ae7b878a5e8eadc1a40fa461bb7303ed4fe53385b766f95b9c",
+    "source": "fivefold/tcmmsline3/ms75_castr.py"
+  },
+  "training_original/fivefold/tcmmsline3/joint_sar_model.py": {
+    "sha256": "f03350c3042773699751a9e5447d64f026bad8a5ec9097704b6c649ea72a2064",
+    "source": "fivefold/tcmmsline3/joint_sar_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/semantic_aux_model.py": {
+    "sha256": "9fbf4ea351b230b97e0aa994c456b1e5eacd9a6bd55f181a27a9191bb4406729",
+    "source": "fivefold/tcmmsline3/semantic_aux_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/native_sar_adapter.py": {
+    "sha256": "faa9822be5b5e389e350eb0d579746b97e04c33bdbfd08b59680c51be2251fb3",
+    "source": "fivefold/tcmmsline3/native_sar_adapter.py"
+  },
+  "training_original/fivefold/tcmmsline3/dinov2_nir_optim.py": {
+    "sha256": "a90160c547c5059cf7d62acc0a46196782ccab5bc020f67d9c128e2e9c251610",
+    "source": "fivefold/tcmmsline3/dinov2_nir_optim.py"
+  },
+  "training_original/fivefold/tcmmsline3/dinov2_nir_model.py": {
+    "sha256": "30fbeb410121aa71cbe4796d4eb06ae64b4ae36290a46c5851c8227b7c1301e9",
+    "source": "fivefold/tcmmsline3/dinov2_nir_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/target_dino_data.py": {
+    "sha256": "dd45438436c963e23a148ed800658571b5b91ec68d17cc47383b85021b0e0f0c",
+    "source": "fivefold/tcmmsline3/target_dino_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/light_sar_data.py": {
+    "sha256": "3763b9d9f2055184ce01c62e2e1223aef86164cc0ed7d794484d0780664c793e",
+    "source": "fivefold/tcmmsline3/light_sar_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/semantic_aux_data.py": {
+    "sha256": "2a626b303b71aa6eb35797d4a83beb9a160538a23369df6813c9fa8cc5b1ba83",
+    "source": "fivefold/tcmmsline3/semantic_aux_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/dual_aux_data.py": {
+    "sha256": "de9ffd3bf734d13ed5d2f28161aaf5556ad9e3741e6c67e6ae22d8f594c9ffac",
+    "source": "fivefold/tcmmsline3/dual_aux_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_rebuild_data.py": {
+    "sha256": "f9c5c52fa254b1c85b85b9551e14fadaf26801b95e611c1dda6c1cd8b3395be2",
+    "source": "fivefold/tcmmsline3/ms75_rebuild_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/target_ms75_data.py": {
+    "sha256": "e447b10fa1b8e37049e03a5974ed07dda3cde2bf024b9e63b7b659ca6f478f01",
+    "source": "fivefold/tcmmsline3/target_ms75_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_sar_joint_data.py": {
+    "sha256": "80f473e7b38e12ed6198af2ffc868ff9506f88094931ce15ac0d8c32655256b7",
+    "source": "fivefold/tcmmsline3/ms75_sar_joint_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_sar_pilot_data.py": {
+    "sha256": "c02a8958638893f1186dd6de70e845b78cb509625cf414745d27bfc9c79492d8",
+    "source": "fivefold/tcmmsline3/ms75_sar_pilot_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/target_dino_model.py": {
+    "sha256": "5a485ef48cd0dc5e4be52e60d0603f057e644e03479ddf394eb65b1d3a4f3ec5",
+    "source": "fivefold/tcmmsline3/target_dino_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/dino_web_model.py": {
+    "sha256": "dcaf26f4b76baad01ab82aa99544bc283b26f4fd2154353522750a6c28c79c3d",
+    "source": "fivefold/tcmmsline3/dino_web_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/dinov3_sat_nir_protocol.py": {
+    "sha256": "420d84790441f2ff0320c18bc8b44bd81dfb783d7686d54d7a88ae8ed6b5e090",
+    "source": "fivefold/tcmmsline3/dinov3_sat_nir_protocol.py"
+  },
+  "training_original/fivefold/tcmmsline3/dinov3_sat_nir_model.py": {
+    "sha256": "0391fa9fc2848326ede358ee6d1ff683ec4aafe60db7bb44a60be158ba5ea389",
+    "source": "fivefold/tcmmsline3/dinov3_sat_nir_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/dinov3_sat_nir_data.py": {
+    "sha256": "8547635dba1d38bb192d67ef86245a18335f4090ca1dd8fed951810162ba3b4b",
+    "source": "fivefold/tcmmsline3/dinov3_sat_nir_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/runtime.py": {
+    "sha256": "a515a1cece0eee57408292642f0dd8d53391465b8ff976d118ffaa0a4a726a48",
+    "source": "fivefold/tcmmsline3/runtime.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_data.py": {
+    "sha256": "d6354573a0b9b7b6bff4741f55acb3ef4fa75bf532b379d2d8848fd8305520f9",
+    "source": "fivefold/tcmmsline3/ms75_data.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_aligned_protocol.py": {
+    "sha256": "5f2accd2cd2b01ba5f5b2069152ce06dcf44e0e0d7b8e9a9936fd86659072154",
+    "source": "fivefold/tcmmsline3/ms75_aligned_protocol.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_oof_source_protocol.py": {
+    "sha256": "37a4dc59f63f21b775780c9047631a569f7bf32d314f3d4fdd7791f002928f0c",
+    "source": "fivefold/tcmmsline3/ms75_oof_source_protocol.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_neutral_oof.py": {
+    "sha256": "c80193e365a10d203cfeb80a3e4b09e819ad4335a263b6935cb2f5a93d96d012",
+    "source": "fivefold/tcmmsline3/ms75_neutral_oof.py"
+  },
+  "training_original/fivefold/tcmmsline3/data.py": {
+    "sha256": "58da79b9587a4d0ac781f4de8c33d3fbcaaa0bff76c473e164174f7c213b7341",
+    "source": "fivefold/tcmmsline3/data.py"
+  },
+  "training_original/fivefold/tools/native24_fivefold_storage.py": {
+    "sha256": "1872ead14a1b70eea9cf7db404699871f225f3437c2a99d86038670838e73602",
+    "source": "fivefold/tools/native24_fivefold_storage.py"
+  },
+  "training_original/fivefold/tools/train_target_dino.py": {
+    "sha256": "e0c2b6aabc1bb53a0d984b30e4ac5048c219df1597d715550a079f78291740f6",
+    "source": "fivefold/tools/train_target_dino.py"
+  },
+  "training_original/fivefold/tools/evaluate_target_dino.py": {
+    "sha256": "72e34ff4ad4faf22c2d178e3f857da8415624656e4c5b1c69f0bc0696d0b34a5",
+    "source": "fivefold/tools/evaluate_target_dino.py"
+  },
+  "training_original/fivefold/tcmmsline3/losses.py": {
+    "sha256": "0bf3646cc75b709c7de1590cc903498e4427122f0e73929869d56a099bb5bd1b",
+    "source": "fivefold/tcmmsline3/losses.py"
+  },
+  "training_original/fivefold/tcmmsline3/fusionaware_a1.py": {
+    "sha256": "93ecf9979c62088140d776a3b4a9eca376a6193a417155f4cec0992b90f8bd32",
+    "source": "fivefold/tcmmsline3/fusionaware_a1.py"
+  },
+  "training_original/fivefold/tools/train_native24_oof_pyramid.py": {
+    "sha256": "fcdb96abde16309aa906f33fd0b763a749e9a22b4b08791818c97c12fc6ed424",
+    "source": "fivefold/tools/train_native24_oof_pyramid.py"
+  },
+  "training_original/fivefold/tools/sar_oct01_extension.py": {
+    "sha256": "24f4cbd605da0a14f28a3fc7e44d45dd27412b77a61222da0ad8f2e1cf34eca7",
+    "source": "fivefold/tools/sar_oct01_extension.py"
+  },
+  "training_original/fivefold/tools/sar_oct01_common.py": {
+    "sha256": "8644553c7e15e87218ebe6b5c537d42f3f343376d2079ad55dcb7e386e8f4a8e",
+    "source": "fivefold/tools/sar_oct01_common.py"
+  },
+  "training_original/fivefold/tools/run_sar_route_diagnostics.py": {
+    "sha256": "51334f93c9f48d2da153be246f4f7c46cff7e3e81eb2a0001ab93ae6882c5463",
+    "source": "fivefold/tools/run_sar_route_diagnostics.py"
+  },
+  "training_original/fivefold/tools/launch_without_thp.py": {
+    "sha256": "da2368d8fd9168da19043880ad1104a15826b37df38c94339dabf291f5a8fcdf",
+    "source": "fivefold/tools/launch_without_thp.py"
+  },
+  "training_original/fivefold/tools/audit_convnext_sar_inputs.py": {
+    "sha256": "4e89d78f717ccd4d261840e6f6844d54ba268c6506e54250f1cc3ca495ca5ee2",
+    "source": "fivefold/tools/audit_convnext_sar_inputs.py"
+  },
+  "training_original/fivefold/tools/train_convnext_sar.py": {
+    "sha256": "ffcdf7c804bf94e1d042da71e4beacda166c3f4a4841d33cb575b1b02aad1c66",
+    "source": "fivefold/tools/train_convnext_sar.py"
+  },
+  "training_original/fivefold/tools/train_ms75_sar_joint.py": {
+    "sha256": "9afb26143b12dd681d1fff85d6b907f49095654a722c99ee59ed11b0f897c841",
+    "source": "fivefold/tools/train_ms75_sar_joint.py"
+  },
+  "training_original/fivefold/tcmmsline3/model.py": {
+    "sha256": "5f5b25a3c7c29879b9354936a36626c3b1270cc7a76b4b38c92e5ac884b2b281",
+    "source": "fivefold/tcmmsline3/model.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_aligned_proxy.py": {
+    "sha256": "1442945ac7540790c89e1e677042b278471c9cd1fed7ade122c6db26f4f4681e",
+    "source": "fivefold/tcmmsline3/ms75_aligned_proxy.py"
+  },
+  "training_original/fivefold/tcmmsline3/local_detail_model.py": {
+    "sha256": "e674d7692bcfc38e2e537b9af2badefd343a9fa6b0eaa00da5234535ca9b750e",
+    "source": "fivefold/tcmmsline3/local_detail_model.py"
+  },
+  "training_original/fivefold/tcmmsline3/hrnet_ocr_model.py": {
+    "sha256": "42e6d8425df65a759cf4293b06280bd8d0cef9588af8353eacf069464214c4b2",
+    "source": "fivefold/tcmmsline3/hrnet_ocr_model.py"
+  },
+  "training_original/fivefold/tools/evaluate_convnext_sar.py": {
+    "sha256": "eae9dda86513d5afe11f4bdab06322f137b797f0b6e55081594b4e4c166f7e37",
+    "source": "fivefold/tools/evaluate_convnext_sar.py"
+  },
+  "training_original/fivefold/tools/evaluate_ms75_sar_joint.py": {
+    "sha256": "96686ab15cc0c9b3ce1a3a1055ce3c1fdcfa8fae19e0b6e3ca44fec3b5fbf1f5",
+    "source": "fivefold/tools/evaluate_ms75_sar_joint.py"
+  },
+  "training_original/fivefold/tools/evaluate_ms75_sar_pilot.py": {
+    "sha256": "47fc5353984eded7683c0c4b6c03f9f289f622d3a28ba0065ec893bcdca133a8",
+    "source": "fivefold/tools/evaluate_ms75_sar_pilot.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_rebuild_model.py": {
+    "sha256": "6157a82446aa849de74b5dffe2b9d4000d3c9c7b4866ec2299125026773f68a6",
+    "source": "fivefold/tcmmsline3/ms75_rebuild_model.py"
+  },
+  "training_original/fivefold/tools/train_ms75_sar_pilot.py": {
+    "sha256": "c0eb68856cf57d784ebeb002f7a210d1088e6608b140f8dbf6ec4c3a1a35d55f",
+    "source": "fivefold/tools/train_ms75_sar_pilot.py"
+  },
+  "training_original/fivefold/tcmmsline3/ms75_sar_pilot_model.py": {
+    "sha256": "dffc3c396e7d776eee9f251202d507c2cbd841e490cf136498b39ccb4ec783d6",
+    "source": "fivefold/tcmmsline3/ms75_sar_pilot_model.py"
+  },
+  "training_original/fivefold/tools/evaluate_ms75_rebuild.py": {
+    "sha256": "ee1db8e2f5931502baff5dde3bc0f258d78d74baf78550ab6620ca4d517a8a9e",
+    "source": "fivefold/tools/evaluate_ms75_rebuild.py"
+  },
+  "training_original/fivefold/tcmmsline3/sar_route_diagnostics.py": {
+    "sha256": "5dafe0cd68aeb564a938235726585caafbcf2abf5ab3972608d2c4f136c1b847",
+    "source": "fivefold/tcmmsline3/sar_route_diagnostics.py"
+  },
+  "training_original/fivefold/tcmmsline3/sar_oct01_models.py": {
+    "sha256": "7519d465def37659e14185d9465452d8da7493c63769779e19533311cf0d5a84",
+    "source": "fivefold/tcmmsline3/sar_oct01_models.py"
+  },
+  "training_original/fivefold/tools/train_native24_oof_dino.py": {
+    "sha256": "02369994f38c0570387a480c9c388be12e4365a18963850d264daf2ae2b1f801",
+    "source": "fivefold/tools/train_native24_oof_dino.py"
+  },
+  "training_original/oref/native24_replay120_qc_worker.py": {
+    "sha256": "a0b677d6f5ac56a675dc7b4912750996c31d43cc65d947314a0195f5fbc1650b",
+    "source": "oref/native24_replay120_qc_worker.py",
+    "original_sha256": "a671d90e3e48451a5507a6de49159df5b54d31350aba9398ab02913cd6f922c3",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_original82_fast.py": {
+    "sha256": "18982b562fe7730ae7a15a7944acda8efca68cd7a12ce0f827d3822260fd2d52",
+    "source": "oref/native24_original82_fast.py",
+    "original_sha256": "52413b6df44e31d545abe59b2e590424e7e3068bf6b1083da433afd457785b9c",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_original82_policy.py": {
+    "sha256": "fb67660ca69304a149551db50ef9d8df3deda15c6f8d260eebe20d477e097e7b",
+    "source": "oref/native24_original82_policy.py"
+  },
+  "training_original/oref/native24_original82_reference.py": {
+    "sha256": "27645e49c40d890dd9a37e324910561b99b62dbec648cba5c90f2328bdf7ed45",
+    "source": "oref/native24_original82_reference.py"
+  },
+  "training_original/oref/native24_original82_data.py": {
+    "sha256": "722ddfc6b0221b3ce1ac6ae8e737080696042bea9f5d113a5d6fd8998212c630",
+    "source": "oref/native24_original82_data.py",
+    "original_sha256": "9ed87f03a82eb9d8e6cb3d2b2a3591d2586d9fc413a47ebafe15d53887b6c890",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_replay120_qc_data.py": {
+    "sha256": "f3b070a8b1c7340b30be1f4ed821205ebf07955fc977f3643b56d5cf042908c2",
+    "source": "oref/native24_replay120_qc_data.py",
+    "original_sha256": "82b98b3547766dd9e94d6f15d49a6ee70647a22e84ef6b04ceee5559eff40fd0",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_pool120_qc_data.py": {
+    "sha256": "05525b2770c12968e178a3ad5c4805ec5018da4dbea3dc00afcf4a0dc8fc49bf",
+    "source": "oref/native24_pool120_qc_data.py",
+    "original_sha256": "defcc6b926853514f51d1cffe3a1a82d32cbc7f7c4e655705b50abaccf3e1f33",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_pool120_qc_worker.py": {
+    "sha256": "c9e1fc923a95d1d41043ede6083f69521db0ca18b21668a3b6bfda38517092d6",
+    "source": "oref/native24_pool120_qc_worker.py",
+    "original_sha256": "2c74a28ad69a69cfdd9f9b02f6646dee712f5a28fc896f2af42de367c315f2b0",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_object_graph_worker.py": {
+    "sha256": "6b86e1b491211c2b8a52d370a2a88eb8393cb4b7af11de6ba72380191c56377f",
+    "source": "oref/native24_object_graph_worker.py",
+    "original_sha256": "ca7a1bd96ba5ef1c300bc9033907ecd603b08e9fb5f79a191e1e61975ea1a95d",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_object_graph_prepare.py": {
+    "sha256": "d3e44f7d28260377255ea8f88d17b9cbd1b991d765eb92f8205ffd596b1cfd65",
+    "source": "oref/native24_object_graph_prepare.py",
+    "original_sha256": "71bb3285369ad8e3bf242e16bd0450031cee380a52d56868340f10e0c7ddcf17",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_object_graph_features.py": {
+    "sha256": "f7bea0ee3355d1c0b3ca93357cf4f10737d0ef11f3e24272909718f99de127ee",
+    "source": "oref/native24_object_graph_features.py",
+    "original_sha256": "4656c4b5c248c76bee6f622884d71c34e2b98c8a880d6760c0a8cc23045642db",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_object_graph_policy.py": {
+    "sha256": "91443507179252b343744b36853f5aebb12856b6e08357a1ffebc0cff26acf7b",
+    "source": "oref/native24_object_graph_policy.py",
+    "original_sha256": "61c5bb6b07755a06e9bdc81d966eb2f58caff2bf906c2758ff38d11b9a4331a5",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/oref/native24_object_graph_model.py": {
+    "sha256": "6ec29cc6ff3cb926f65c41a09a366e73c85631de8b6c5d87e2e216ca770f4d45",
+    "source": "oref/native24_object_graph_model.py",
+    "original_sha256": "e9e838f879eb823bcea155d050ef6064af14334c0a7a8d552ad4d2dd2fd0c1d1",
+    "change_scope": "Release workflow restriction; retained mathematical cores verified separately"
+  },
+  "training_original/fivefold/vendor/CROMA/use_croma.py": {
+    "sha256": "a38567beed29eb08108a47cdc97fe98aec50fd4be0bd98a5266bcd18aafb7c5b",
+    "source": "fivefold/vendor/CROMA/use_croma.py"
+  },
+  "training_original/fivefold/vendor/dinov3_convnext/convnext.py": {
+    "sha256": "ab969325158df58f4b0957f81f77d543392df61611dc0c72e89ba172ecdf0fb9",
+    "source": "fivefold/vendor/dinov3_convnext/convnext.py"
+  },
+  "training_original/mos/vendor/CROMA/LICENSE": {
+    "sha256": "5e91f8f44b4fe4139204b307d9853d156075386baff5720e4cb3bc7d5f46437f",
+    "source": "mos/vendor/CROMA/LICENSE"
+  },
+  "training_original/mos/vendor/CROMA/use_croma.py": {
+    "sha256": "a38567beed29eb08108a47cdc97fe98aec50fd4be0bd98a5266bcd18aafb7c5b",
+    "source": "mos/vendor/CROMA/use_croma.py"
+  },
+  "training_original/mos/vendor/dinov3_convnext/convnext.py": {
+    "sha256": "ab969325158df58f4b0957f81f77d543392df61611dc0c72e89ba172ecdf0fb9",
+    "source": "mos/vendor/dinov3_convnext/convnext.py"
+  },
+  "training_original/mos/vendor/dinov3_convnext/LICENSE.md": {
+    "sha256": "25d122eb8f5b880fd23c736fb6ea8018ee45c12237e00b8a86d14c653904999e",
+    "source": "mos/vendor/dinov3_convnext/LICENSE.md"
+  },
+  "training_original/mos/tools/native24_extra_candidates.py": {
+    "sha256": "5ac4c8161b27d61a9de85a1342b46dbd361713082542d82c044e1350a4a575cc",
+    "source": "tools/native24_extra_candidates.py (LF normalized)"
+  },
+  "training_original/oref/native24_object_graph_features.cpp": {
+    "sha256": "82477fb96940e7c0f9b10580932547441a078cb71ae2a5a59699b8e79fd7bfd9",
+    "source": "release shared dependency",
+    "change_scope": "Extracted shared implementation or native-build adapter"
+  },
+  "training_original/oref/native24_original82_kernels.cpp": {
+    "sha256": "4b35e2a28c5a9bffa1884e731f1b419b0c38e155042d5f0fe1c83932970e3525",
+    "source": "release shared dependency",
+    "change_scope": "Extracted shared implementation or native-build adapter"
+  },
+  "training_original/oref/native_build.py": {
+    "sha256": "9428b7d5a8591386816f0785b479d033f5a2ac86a8ea561576a561ef481694bf",
+    "source": "release shared dependency",
+    "change_scope": "Extracted shared implementation or native-build adapter"
+  },
+  "training_original/oref/training_common.py": {
+    "sha256": "1aa15f9fc6625fb5e23321bd43b18396d278b946bde945e35b5b98baa0cd76ab",
+    "source": "release shared dependency",
+    "change_scope": "Extracted shared implementation or native-build adapter"
+  },
+  "training_original/oref/training_data_common.py": {
+    "sha256": "197d8c52a62b811c9c80f603be3c9c6bc2fe71d1e0856983f79dc131397a1439",
+    "source": "release shared dependency",
+    "change_scope": "Extracted shared implementation or native-build adapter"
+  }
+}

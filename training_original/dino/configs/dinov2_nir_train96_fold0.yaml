@@ -1,0 +1,204 @@
+_base_: base.yaml
+
+experiment:
+  name: tcmmsline3_dinov2_nir_train96_fold0_bf16_finite_guard_v6
+  output_dir: ${DINOV2_NIR_OUTPUT_DIR:-outputs/line3/dinov2_nir_train96_fold0_bf16_finite_guard_v6}
+  seed: 1337
+
+data:
+  dataset_format: fbp_ms
+  dataset_variant: legacy
+  protocol_stage: dinov2_nir_fold0_train96
+  root: ${FBP_DATA_ROOT:-D:/fbponlymsdata}
+  expected_scene_count: 150
+  expected_hw: [6908, 7300]
+  official_120_30_protocol: false
+  train_split: ms75_oof_seed1337_fold_0_train
+  # These aliases authenticate the held24 provenance in checkpoints. They are
+  # never opened during fitting because both validation and auto-test are off.
+  val_split: ms75_oof_seed1337_fold_0_heldout
+  test_split: ms75_oof_seed1337_fold_0_heldout
+  load_sar: false
+  sar_pairing: zero
+  fixed_40k_tile_protocol: false
+  fixed_tile_index:
+  fixed_tile_subsets:
+  validation_exact_fixed_tiles: false
+  validation_holdout_fraction: 0.0
+  patch_size: 512
+  sar_size: 128
+  sar_native_size: 128
+  context_size: 512
+  context_input_size: 512
+  samples_per_epoch: 30720
+  eval_patches_per_scene: 1
+  min_labeled_fraction: 0.50
+  sampling_attempts: 16
+  num_workers: 8
+  cache_scenes: 1
+  # Each 64-crop optimizer update spans four consecutive 16-crop scene
+  # blocks instead of drawing all accumulated gradients from one scene.
+  scene_block_size: 16
+  max_scene_repeat: 16
+  rare_class_ids: [7, 9, 15, 18, 19, 22, 23]
+  # This arm is label-side only.  It deliberately uses the same authenticated
+  # fold0-train96 class-coordinate index as the rare arm; no teacher prediction
+  # or confusion artifact participates in fitting or checkpoint selection.
+  hard_class_ids: [0, 4, 5, 6, 8, 10, 11, 12, 13, 14, 17, 20, 21]
+  dynamic_sampling:
+    scene_fraction: 0.50
+    rare_fraction: 0.30
+    hard_fraction: 0.20
+    class_index: metadata/ms75_oof_seed1337_fold_0_train_points.npz
+    class_index_sha256: c14f3ed42ea1a3bf5e372ffc46d0294c30a7f18724738f9c23fb1d2c5253ac84
+    center_jitter: 128
+    max_scene_repeat: 16
+  spectral_augmentation:
+    enabled: true
+    probability: 0.8
+    global_gain_range: [0.90, 1.10]
+    global_offset_range: [-0.02, 0.02]
+    band_gain_range: [0.97, 1.03]
+    band_offset_range: [-0.008, 0.008]
+  normalization:
+    ms:
+      divisor: 255.0
+      mean: [0.363, 0.390, 0.371, 0.506]
+      std: [0.231, 0.231, 0.244, 0.254]
+
+model:
+  architecture: dinov2_nir_dpt
+  fusion_mode: ms_only
+  num_classes: 24
+  backbone_model: vit_base_patch14_dinov2
+  pretrained: true
+  pretrained_file: ${DINOV2_NIR_PRETRAINED_FILE:-/archive/hot5/yeqi/pretrained/dinov2_vitb14_pretrain.pth}
+  pretrained_file_sha256: 0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73
+  input_band_order: [B, G, R, NIR]
+  input_size: 512
+  padded_size: 518
+  patch_size: 14
+  feature_indices: [2, 5, 8, 11]
+  reassemble_channels: [96, 192, 384, 768]
+  decoder_channels: 256
+  nir_initialization: rgb_patch_weight_mean
+  initial_nir_gate: 0.1
+  rgb_normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  gradient_checkpointing: true
+
+loss:
+  class_weights:
+  cross_entropy_weight: 1.0
+  dice_weight: 0.5
+  lovasz_weight: 0.25
+  # Keep the dense reductions and sort/cumsum objective in FP32 even though
+  # the backbone/decoder forward uses BF16 autocast.
+  force_main_losses_fp32: true
+  ms_aux_weight: 0.0
+  sar_aux_weight: 0.0
+  sar_native_aux_weight: 0.0
+  aux_weight: 0.0
+  spectral_aux_weight: 0.0
+  boundary_weight: 0.0
+  family_ce_weight: 0.0
+  hierarchy_consistency_weight: 0.0
+  family_region_aux_weight: 0.0
+  family_child_weight: 0.0
+  family_contrast_weight: 0.0
+  family_region_confusion_weight: 0.0
+  family_region_no_harm_weight: 0.0
+  region_prototype_weight: 0.0
+  confusion_margin_weight: 0.0
+  prototype_alignment_weight: 0.0
+  private_orthogonality_weight: 0.0
+  negative_transfer_weight: 0.0
+  utility_routing_weight: 0.0
+  alignment_offset_weight: 0.0
+  teacher_distillation_weight: 0.0
+  fixed_anchor_no_harm_weight: 0.0
+  fusion_mixture_nll_weight: 0.0
+
+train:
+  device: cuda
+  # GPU2 probes 16 -> 8 -> 4 -> 2 -> 1 and exports the largest batch that
+  # leaves at least 2GiB of measured device headroom.
+  # Accumulation always preserves the unified 64-crop effective update.
+  epochs: 71
+  batch_size: ${DINOV2_NIR_PHYSICAL_BATCH:-1}
+  gradient_accumulation_steps: ${DINOV2_NIR_ACCUMULATION_STEPS:-64}
+  # Define CE/Dice/Lovasz per image, then average images.  This makes the
+  # objective exactly decomposable across physical batches 16/8/4/2/1;
+  # otherwise Dice/Lovasz (and CE when ignore fractions differ) depend on the
+  # amount of memory available during the batch probe.
+  loss_microbatch_size: 1
+  learning_rate: 0.0002
+  backbone_lr_multiplier: 0.1
+  layer_decay: 0.9
+  weight_decay: 0.05
+  scheduler_unit: step
+  warmup_steps: 2000
+  warmup_epochs: 0
+  scheduler_total_successful_optimizer_updates: 33600
+  max_successful_optimizer_updates: 33600
+  successful_update_milestones: [9600, 14400, 19200, 24000, 28800, 33600]
+  # Epoch selection is deliberately deferred to the held24 evaluator.
+  primary_successful_optimizer_update:
+  minimum_lr_ratio: 0.0
+  gradient_clip_norm: 1.0
+  amp: true
+  # DINOv2 attention became persistently non-finite under FP16 late in the
+  # original run. Ampere BF16 retains mixed-precision throughput with FP32's
+  # exponent range; GradScaler is intentionally disabled for this dtype.
+  amp_dtype: bfloat16
+  amp_initial_scale: 1024.0
+  amp_min_scale: 1.0
+  amp_growth_interval: 1000000
+  amp_growth_factor: 2.0
+  amp_backoff_factor: 0.5
+  use_ema: true
+  ema_decay: 0.999
+  ema_milestone_epochs: []
+  # No periodic epoch snapshots. Rolling recovery and six compact EMA
+  # milestones are the complete low-disk artifact set.
+  checkpoint_every: 1000
+  recovery_checkpoint_interval_steps: 1000
+  # Scan raw model, EMA, optimizer, metrics and scalar state before any new
+  # recovery payload is allowed to replace the last clean checkpoint.
+  validate_checkpoint_finiteness: true
+  # Validate raw and EMA tensors after every successful optimizer update so a
+  # poisoned in-memory state stops before scheduler/EMA/checkpoint publication.
+  validate_step_finiteness: true
+  # Keep the preceding atomic last.pt inode as previous.pt. Auto-resume may
+  # fall back only when last.pt itself is unreadable/non-finite.
+  retain_previous_recovery_checkpoint: true
+  progress_log_interval_batches: 256
+  validation_enabled: false
+  selection_metric: last_epoch
+  freeze_modules: []
+  staged_unfreeze_modules: []
+  staged_unfreeze_epoch:
+  trainable_modules: []
+  initialization_checkpoint:
+  initialization_exclude_prefixes: []
+  ms_initialization_checkpoint:
+  sar_initialization_checkpoint:
+  teacher_checkpoint:
+  continuation_initialization_checkpoint:
+  ms75_anchor_checkpoint:
+  fixed_anchor_teacher_enabled: false
+  resume_checkpoint:
+  auto_resume: true
+  cudnn_benchmark: true
+
+inference:
+  protocol_role: dinov2_nir_fold0_train96
+  batch_size: 1
+  max_windows_per_scene:
+  tile_stride: 256
+  tta_transforms: [none]
+  blend_window: hann
+  hann_floor: 0.05
+  amp: true
+  evaluate_test_after_training: false

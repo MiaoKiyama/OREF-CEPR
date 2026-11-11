@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv*/
+*.pth
+*.pt
+*.safetensors
+*.npy
+*.npz
+*.so
+*.dll
+pretrained/
+weights/
+data/
+runs/
+.cache/
+
+!configs/fbp/sampling/metadata/*.npz

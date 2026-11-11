@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npz binary
+# Preserve authenticated historical source/config bytes, including line endings.
+training_original/** -text

@@ -1,0 +1,48 @@
+_base_: dinov3_sat_nir_train96_fold0.yaml
+experiment:
+  name: dino_web_v3l_train96_gpu6_20260914_v1
+  mode: formal
+  output_dir: /var/tmp/yeqi_dino_web_20260914_v1/v3l_gpu6/train96
+  seed: 1337
+data:
+  protocol_stage: dino_web_train96
+  root: /archive/hot5/yeqi/datasets/fbponlymsdata
+  num_workers: 6
+model:
+  architecture: dino_web_nir_dpt
+  autocast_cache_enabled: false
+  variant: v3l
+  backbone_model: vit_large_patch16_dinov3.lvd1689m
+  pretrained_file: /archive/hot5/yeqi/pretrained/dino_web_20260914/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth
+  pretrained_file_sha256: 8aa4cbddda325040fc78db2c272754af6ebe8ff2c55f6ec4f1964d8890f66035
+  feature_indices: [5, 11, 17, 23]
+  rgb_normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+loss:
+  force_main_losses_fp32: true
+train:
+  batch_size: 4
+  gradient_accumulation_steps: 16
+  amp_dtype: bfloat16
+  successful_update_milestones: [1920, 3840, 5760, 7680, 8640, 9600, 11520, 14400, 19200, 24000, 28800, 33600]
+  validate_checkpoint_finiteness: true
+  validate_step_finiteness: true
+  retain_previous_recovery_checkpoint: true
+  recovery_checkpoint_interval_steps: 500
+  progress_log_interval_batches: 64
+inference:
+  protocol_role: dino_web_train96
+  batch_size: 4
+pipeline:
+  root: /var/tmp/yeqi_dino_web_20260914_v1/v3l_gpu6
+  archive_root: /archive/hot5/yeqi/experiments/TCMMSline3_dino_web/v3l_gpu6_20260914_v1
+  candidate_epochs: [4, 8, 12, 16, 18, 20, 24, 30, 40, 50, 60, 70]
+  minimum_free_gib: 20
+  physical_batch_candidates: [8, 4, 2, 1]
+  gpu: 6
+  cpu_affinity: [36, 37, 38, 39, 40, 41, 42, 43, 92, 93, 94, 95, 96, 97, 98, 99]
+  torch_threads: 2
+  eval_batch_size: 4
+  eval_num_workers: 4
+  official30_auto: false

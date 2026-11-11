@@ -1,0 +1,31 @@
+{
+  "variant": "pyramid",
+  "decoder_channels": 128,
+  "context_source_size": 1024,
+  "sar_intensity_channels": 32,
+  "sar_interaction_width": 64,
+  "sar_pyramid_channels": [
+    32,
+    48,
+    64
+  ],
+  "spectral_channels": [
+    32,
+    48,
+    96,
+    128,
+    192
+  ],
+  "gradient_checkpointing": true,
+  "optical_lr": 1e-05,
+  "sar_lr": 0.0001,
+  "tail_lr": 3e-06,
+  "weight_decay": 0.01,
+  "ema_decay": 0.999,
+  "warmup_epochs": 2,
+  "scheduler_epochs": 30,
+  "optical_aux_weight": 0.2,
+  "spectral_aux_weight": 0.1,
+  "sar_aux_weight": 0.1,
+  "convnext_checkpoint_sha256": "61fa432da5aa0e71bc8e49ce4179f4a4d1d95e4c084a81705c476316bfa3eb33"
+}

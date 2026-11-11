@@ -1,0 +1,2267 @@
+{
+  "auto_evaluation": false,
+  "campaign_name": "native24_fivefold_gpu03456_20261015_v1",
+  "candidate_epochs": [
+    17
+  ],
+  "checkpoint_lock_file": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/checkpoint.lock",
+  "checkpoint_reserve_bytes": 0,
+  "classes": 24,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+  ],
+  "data": {
+    "augmentation": true,
+    "boundary_support": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/boundary_manifest.json",
+    "cache_scenes": 2,
+    "crop_size": 512,
+    "data_root": "/archive/hot5/yeqi/datasets/fbponlymsdata",
+    "dino_class_index": "/archive/hot5/yeqi/datasets/fbponlymsdata/metadata/ms75_oof_seed1337_fold_4_train_points.npz",
+    "dino_class_index_sha256": "3904fb4e7b9482320e50984961cac4995f9be03f71a166f66c59dd1e2d2e3c9d",
+    "fold_id": 4,
+    "global_input_size": 512,
+    "held_ids": [
+      "GF2_PMS1__L1A0000564539-MSS1",
+      "GF2_PMS1__L1A0000708367-MSS1",
+      "GF2_PMS1__L1A0001015649-MSS1",
+      "GF2_PMS1__L1A0001064469-MSS1",
+      "GF2_PMS1__L1A0001169100-MSS1",
+      "GF2_PMS1__L1A0001562063-MSS1",
+      "GF2_PMS1__L1A0001625023-MSS1",
+      "GF2_PMS1__L1A0001680853-MSS1",
+      "GF2_PMS1__L1A0001765570-MSS1",
+      "GF2_PMS1__L1A0001767953-MSS1",
+      "GF2_PMS1__L1A0001793003-MSS1",
+      "GF2_PMS1__L1A0001798942-MSS1",
+      "GF2_PMS1__L1A0001821711-MSS1",
+      "GF2_PMS2__L1A0000564691-MSS2",
+      "GF2_PMS2__L1A0000948183-MSS2",
+      "GF2_PMS2__L1A0001246644-MSS2",
+      "GF2_PMS2__L1A0001396040-MSS2",
+      "GF2_PMS2__L1A0001563129-MSS2",
+      "GF2_PMS2__L1A0001573999-MSS2",
+      "GF2_PMS2__L1A0001708230-MSS2",
+      "GF2_PMS2__L1A0001757317-MSS2",
+      "GF2_PMS2__L1A0001799015-MSS2",
+      "GF2_PMS2__L1A0001838560-MSS2",
+      "GF2_PMS2__L1A0001886305-MSS2"
+    ],
+    "plans_manifest": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/plans_manifest.json",
+    "raw_manifest": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/raw_manifest.json",
+    "sar_scene_bindings": {
+      "GF2_PMS1__L1A0000575925-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785248899000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/575925.tif",
+            "size": 50324618
+          },
+          {
+            "mtime_ns": 1785248899000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/575925.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "e3e7bf280830c8816455662ee01f43f7bb41e4281643c893100ff48838f9070f"
+      },
+      "GF2_PMS1__L1A0000647767-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785261110000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/647767.tif",
+            "size": 49731960
+          },
+          {
+            "mtime_ns": 1785261110000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/647767.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "edfaf4bf041d83cac1c679b0a8d13e0de990bdcd60a440c4fbf5e9694538fe67"
+      },
+      "GF2_PMS1__L1A0000647768-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785261110000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/647768.tif",
+            "size": 49722762
+          },
+          {
+            "mtime_ns": 1785261110000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/647768.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "1a2481ea3d3ea2999d51c4d8236bc1ec1f65a22729c24392e91ba52ba550c34e"
+      },
+      "GF2_PMS1__L1A0000647770-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1784904209000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/647770.tif",
+            "size": 53115078
+          },
+          {
+            "mtime_ns": 1784904209000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/647770.tif",
+            "size": 4190
+          }
+        ],
+        "available": true,
+        "registration_sha256": "ba1d606fc09a6e0c1020ef04607dfada8b360ab65916d3a670eb062dce2dedcd"
+      },
+      "GF2_PMS1__L1A0000962382-MSS1": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS1__L1A0001015646-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785261793000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1015646.tif",
+            "size": 49344513
+          },
+          {
+            "mtime_ns": 1785261793000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1015646.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "9d1726f3ef6f9491a2c252cc0f6dcf2a519433f400a2f248aca27646f5eee00d"
+      },
+      "GF2_PMS1__L1A0001015648-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785261793000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1015648.tif",
+            "size": 49372685
+          },
+          {
+            "mtime_ns": 1785261793000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1015648.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a649d516f1a9f65bc5ff0d9cec2a81ef9ffe1e12bf597f19475ca4efd2ed2fcd"
+      },
+      "GF2_PMS1__L1A0001037899-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785261915000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1037899.tif",
+            "size": 53166905
+          },
+          {
+            "mtime_ns": 1785261915000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1037899.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "d96e5babf677e0bda86d59fe5c439aef1d55664066f4b3eb341aa6bb436293a1"
+      },
+      "GF2_PMS1__L1A0001094941-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785262474000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1094941.tif",
+            "size": 51535625
+          },
+          {
+            "mtime_ns": 1785262474000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1094941.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "6d420052b1513e0b5f572da8719267b6cb5abd4468f94949fefbea8cec834ea2"
+      },
+      "GF2_PMS1__L1A0001104323-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785262625000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1104323.tif",
+            "size": 52909435
+          },
+          {
+            "mtime_ns": 1785262626000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1104323.tif",
+            "size": 4233
+          }
+        ],
+        "available": true,
+        "registration_sha256": "f662d5a9ab54ecb073a7daf11d7affc378b081b8d37554c123c937eeab6d5798"
+      },
+      "GF2_PMS1__L1A0001112719-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785262879000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1112719.tif",
+            "size": 52889017
+          },
+          {
+            "mtime_ns": 1785262879000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1112719.tif",
+            "size": 4233
+          }
+        ],
+        "available": true,
+        "registration_sha256": "389b24e9ee485a0379d5f80377a6a382b48f3f6fbdcb5e3ebb05e9433f4f386e"
+      },
+      "GF2_PMS1__L1A0001217916-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785248900000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1217916.tif",
+            "size": 54665607
+          },
+          {
+            "mtime_ns": 1785248900000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1217916.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "2a4fd1c3b325872b8d1ea3eb5931791142ab2be98d86bfbe0d6e88ae79011064"
+      },
+      "GF2_PMS1__L1A0001290139-MSS1": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": "2dd3b795a9b5e105160a26da9c3999d31030807c3c32a97334fddb59301fd47f"
+      },
+      "GF2_PMS1__L1A0001293546-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785263159000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1293546.tif",
+            "size": 51932751
+          },
+          {
+            "mtime_ns": 1785263159000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1293546.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "35a9b8c461c84b3264800a0e5752530d16af6a81844d0a7536783009effaedb2"
+      },
+      "GF2_PMS1__L1A0001335463-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785263395000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1335463.tif",
+            "size": 57457141
+          },
+          {
+            "mtime_ns": 1785263395000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1335463.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "f8c962985d724f67e1e0e65802d3b734febbbd9b8855e6a60354cd72014815a2"
+      },
+      "GF2_PMS1__L1A0001471230-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785264179000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1471230.tif",
+            "size": 51512845
+          },
+          {
+            "mtime_ns": 1785264179000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1471230.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "e9ad67b1053ea55be715ae4e7dd3895e3dafe4cd78a5ee78643df1e083e31549"
+      },
+      "GF2_PMS1__L1A0001491417-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785248901000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1491417.tif",
+            "size": 54100945
+          },
+          {
+            "mtime_ns": 1785248902000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1491417.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "bb2bbbdf8639c0943a53274f8db9a6f03cdd48a0c1be0eb12008253713bc7868"
+      },
+      "GF2_PMS1__L1A0001491423-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785264290000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1491423.tif",
+            "size": 54359103
+          },
+          {
+            "mtime_ns": 1785264290000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1491423.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "75d66c2b8718e127f9f209bc148dd7ff7c5480e11625202f8a764af0e962776d"
+      },
+      "GF2_PMS1__L1A0001491484-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785264469000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1491484.tif",
+            "size": 51078463
+          },
+          {
+            "mtime_ns": 1785264469000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1491484.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "d8faf6da5dd1c93ab7359fcde2af1eae3aac032320dde75017a69ed971b9c185"
+      },
+      "GF2_PMS1__L1A0001517689-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785264581000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1517689.tif",
+            "size": 49545887
+          },
+          {
+            "mtime_ns": 1785264581000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1517689.tif",
+            "size": 4245
+          }
+        ],
+        "available": true,
+        "registration_sha256": "bc252cd100b2f4d2fa1e8fa4859dc8b875caaac0bfe379a2de21597f98eb1b67"
+      },
+      "GF2_PMS1__L1A0001537716-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785248902000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1537716.tif",
+            "size": 54388935
+          },
+          {
+            "mtime_ns": 1785248902000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1537716.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "37d894333392c9a8cd3882df6b96a7db1fff44719ef76223c5019808c82b0a07"
+      },
+      "GF2_PMS1__L1A0001553848-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785264822000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1553848.tif",
+            "size": 51235615
+          },
+          {
+            "mtime_ns": 1785264822000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1553848.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "92d1560c3b5f620eaa4e4a93ce4c92a477624e6265740b0a14c02d6f46aac602"
+      },
+      "GF2_PMS1__L1A0001642566-MSS1": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS1__L1A0001647941-MSS1": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS1__L1A0001660727-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785265530000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1660727.tif",
+            "size": 51145073
+          },
+          {
+            "mtime_ns": 1785265530000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1660727.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "33ea2a0343abffd1a80fbc6fdef677b651079544b514f47b9b1901a3138797b6"
+      },
+      "GF2_PMS1__L1A0001668483-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785265689000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1668483.tif",
+            "size": 71276867
+          },
+          {
+            "mtime_ns": 1785265689000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1668483.tif",
+            "size": 5672
+          }
+        ],
+        "available": true,
+        "registration_sha256": "9a46f4a20ed4cc189965b3965e917ad84106e1d36179ca995b395e6755e9fa22"
+      },
+      "GF2_PMS1__L1A0001680851-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785266478000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1680851.tif",
+            "size": 67664597
+          },
+          {
+            "mtime_ns": 1785266478000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1680851.tif",
+            "size": 5307
+          }
+        ],
+        "available": true,
+        "registration_sha256": "276279a95b4e83a8846a5626a0caca050524f0de32b4c9512018f189e01fd58d"
+      },
+      "GF2_PMS1__L1A0001734328-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785266889000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1734328.tif",
+            "size": 49499987
+          },
+          {
+            "mtime_ns": 1785266889000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1734328.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "c377db26fc9f9d6c56478929c0dcf41be08514bd66e387026424cc4a63fe14d0"
+      },
+      "GF2_PMS1__L1A0001765572-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785267211000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1765572.tif",
+            "size": 52039377
+          },
+          {
+            "mtime_ns": 1785267211000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1765572.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "595b966118e3728de770508415bb393b20f938f53f029d10c72d4f0e433acddd"
+      },
+      "GF2_PMS1__L1A0001791738-MSS1": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS1__L1A0001792971-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785267843000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1792971.tif",
+            "size": 56831943
+          },
+          {
+            "mtime_ns": 1785267843000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1792971.tif",
+            "size": 4943
+          }
+        ],
+        "available": true,
+        "registration_sha256": "2545e701b2f977083761c99e97ed9bceba9bd81a3c097f29fc93cf2cefc25383"
+      },
+      "GF2_PMS1__L1A0001798945-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785267385000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1798945.tif",
+            "size": 55678965
+          },
+          {
+            "mtime_ns": 1785267385000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1798945.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "be00db5a96a5d7fd5bcdf91d4a8626fd419a8557dfb24273ce09db8f93b2f1d6"
+      },
+      "GF2_PMS1__L1A0001910522-MSS1": {
+        "assets": [
+          {
+            "mtime_ns": 1785268292000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1910522.tif",
+            "size": 54014611
+          },
+          {
+            "mtime_ns": 1785268293000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1910522.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a1a438b02d6892ea0335a10ef5429b43445daf856dff9217c8b79f93b85fd0d9"
+      },
+      "GF2_PMS2__L1A0000564692-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785268545000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/564692.tif",
+            "size": 49912380
+          },
+          {
+            "mtime_ns": 1785268545000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/564692.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "2ce5a53fae825ac24bfe2ffe9fca13d6b0f311e5645f152f285cdf57c899e8b0"
+      },
+      "GF2_PMS2__L1A0000635115-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": "2d8dddf552ba46125339f3a3ddc9fe0793ec7a28004fa72e349c40ab2eda15e0"
+      },
+      "GF2_PMS2__L1A0000647892-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1784904213000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/647892.tif",
+            "size": 53713572
+          },
+          {
+            "mtime_ns": 1784904213000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/647892.tif",
+            "size": 4223
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a5b213fc0f2fe3699eee395f5a130f99f9470cb5be242736886bb86ebe168114"
+      },
+      "GF2_PMS2__L1A0000658636-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785268690000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/658636.tif",
+            "size": 50128608
+          },
+          {
+            "mtime_ns": 1785268691000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/658636.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "23b6ff005b03a11596264152a19881d8cd2e22b76c4e9fbda7124bd2f558566f"
+      },
+      "GF2_PMS2__L1A0000658637-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785261111000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/658637.tif",
+            "size": 50159948
+          },
+          {
+            "mtime_ns": 1785261111000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/658637.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "483662b906cae0b99d37fb18536c79febf21b28fe08d69db6cf9185d558f993a"
+      },
+      "GF2_PMS2__L1A0000736601-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0000788763-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0000789259-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785269140000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/789259.tif",
+            "size": 56190452
+          },
+          {
+            "mtime_ns": 1785269140000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/789259.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "7235c8f7fcaddfbcbaeddcb1fd779320fa6bc5ef9456ed0a236d9fcf4ebcbe9d"
+      },
+      "GF2_PMS2__L1A0000851345-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0000958144-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785269649000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/958144.tif",
+            "size": 50971774
+          },
+          {
+            "mtime_ns": 1785269649000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/958144.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "f184877ab7d5f2b3ca114ffd8ba6919f020178a62a4f88278677bb3177fbefee"
+      },
+      "GF2_PMS2__L1A0000958146-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785269761000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/958146.tif",
+            "size": 51167020
+          },
+          {
+            "mtime_ns": 1785269761000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/958146.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "68d3fa16dcaa19228349e86e899517659345e830535345ac425248e7fb3fe85c"
+      },
+      "GF2_PMS2__L1A0001015594-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1784904212000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1015594.tif",
+            "size": 52297985
+          },
+          {
+            "mtime_ns": 1784904212000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1015594.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "db220ecf212bd120823e4a3eaa8260c9865375990bf489e2f3d574c20e81b53b"
+      },
+      "GF2_PMS2__L1A0001015596-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248904000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1015596.tif",
+            "size": 48943243
+          },
+          {
+            "mtime_ns": 1785248904000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1015596.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "3947d786204d06ef1a05fd1444d41d80d3faf55a636ee8cfc7768bca6c61cd5a"
+      },
+      "GF2_PMS2__L1A0001015597-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785261794000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1015597.tif",
+            "size": 48803339
+          },
+          {
+            "mtime_ns": 1785261794000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1015597.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "0156bae6a1059838bd86f7b4ec6e5c924f088b5bb622be84dc52eacafae048a9"
+      },
+      "GF2_PMS2__L1A0001028977-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248904000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1028977.tif",
+            "size": 53359173
+          },
+          {
+            "mtime_ns": 1785248904000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1028977.tif",
+            "size": 4212
+          }
+        ],
+        "available": true,
+        "registration_sha256": "44addb247cfd0fc5aeb6c5473a1bd4d4877e473e920949fded66b33dc33e3198"
+      },
+      "GF2_PMS2__L1A0001035795-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248905000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1035795.tif",
+            "size": 53421759
+          },
+          {
+            "mtime_ns": 1785248905000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1035795.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "60e6b5e4043e1c4d9fd49b026456b97a13cac8f5a44c56984a39e50fcc9832e0"
+      },
+      "GF2_PMS2__L1A0001092725-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270034000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1092725.tif",
+            "size": 55570977
+          },
+          {
+            "mtime_ns": 1785270034000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1092725.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "2b630833b37750e4540bc0a88f48e83d6b58a0c7bdbe75539aa274ff9887de8e"
+      },
+      "GF2_PMS2__L1A0001116443-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785262880000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1116443.tif",
+            "size": 53382711
+          },
+          {
+            "mtime_ns": 1785262880000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1116443.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "0a06fde53db17f190e4c45bce084d01e1f28f6ad9fab8220280fe7b4db8ae424"
+      },
+      "GF2_PMS2__L1A0001116444-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785262880000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1116444.tif",
+            "size": 53439159
+          },
+          {
+            "mtime_ns": 1785262880000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1116444.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a2396ced4aae4beabeae36fdc69f44acc2433fa22c0be12b4b043a7282482f2d"
+      },
+      "GF2_PMS2__L1A0001119057-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785263031000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1119057.tif",
+            "size": 53362143
+          },
+          {
+            "mtime_ns": 1785263031000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1119057.tif",
+            "size": 4212
+          }
+        ],
+        "available": true,
+        "registration_sha256": "69e08393a6ed9ccde92f1bc01980c25bee9c7dd65a61146fc2eec95626574312"
+      },
+      "GF2_PMS2__L1A0001140983-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270224000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1140983.tif",
+            "size": 53946377
+          },
+          {
+            "mtime_ns": 1785270224000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1140983.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "bc6c2f5a08096b490fa0f94a88106108ea0f68515a4d60d3b53c7739b029f8d9"
+      },
+      "GF2_PMS2__L1A0001167480-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270427000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1167480.tif",
+            "size": 53332635
+          },
+          {
+            "mtime_ns": 1785270427000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1167480.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "444e45a0812401db92dcc5290ca772fe39b00bc52406fa77e67957c9ee125c40"
+      },
+      "GF2_PMS2__L1A0001206072-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270591000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1206072.tif",
+            "size": 52383213
+          },
+          {
+            "mtime_ns": 1785270591000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1206072.tif",
+            "size": 4245
+          }
+        ],
+        "available": true,
+        "registration_sha256": "78a3c433f330d4652a589bbb51ce58532a35010bb290e2b512b6a6cf1ef213f0"
+      },
+      "GF2_PMS2__L1A0001246645-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270732000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1246645.tif",
+            "size": 62897001
+          },
+          {
+            "mtime_ns": 1785270732000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1246645.tif",
+            "size": 5307
+          }
+        ],
+        "available": true,
+        "registration_sha256": "8e5faa968540b4c960c574adb0a54f9713d0b7b1c6b7b06a0c98a691b5ea7bef"
+      },
+      "GF2_PMS2__L1A0001251799-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785270933000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1251799.tif",
+            "size": 52273081
+          },
+          {
+            "mtime_ns": 1785270933000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1251799.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "7f08918933d87820c6009bfdf8d81c9141b5d38c55bc4724ad97d4119b6faccc"
+      },
+      "GF2_PMS2__L1A0001251800-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785271045000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1251800.tif",
+            "size": 52785905
+          },
+          {
+            "mtime_ns": 1785271045000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1251800.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "ecacfd26b50046ff9564ed24fe1d4146218002d11d8b95a2e3e9ee84606317b9"
+      },
+      "GF2_PMS2__L1A0001336975-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785263528000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1336975.tif",
+            "size": 50937007
+          },
+          {
+            "mtime_ns": 1785263528000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1336975.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "8ffbd3731d152ca616d5b80b8f1546e2b5e321fe4d0d34bdc88dfb2040dbaf20"
+      },
+      "GF2_PMS2__L1A0001367842-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248905000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1367842.tif",
+            "size": 53427265
+          },
+          {
+            "mtime_ns": 1785248905000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1367842.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "fe42a81749b505fb85efc947f0716def8288b886a2a8cc91ddf49a80eb0d743b"
+      },
+      "GF2_PMS2__L1A0001389317-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0001393716-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785271447000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1393716.tif",
+            "size": 52498659
+          },
+          {
+            "mtime_ns": 1785271447000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1393716.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a18a2c8fbaf6700ac5e166600854033321c50fd0414f2065171e237146d1edb5"
+      },
+      "GF2_PMS2__L1A0001396034-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785271607000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1396034.tif",
+            "size": 57589759
+          },
+          {
+            "mtime_ns": 1785271607000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1396034.tif",
+            "size": 4932
+          }
+        ],
+        "available": true,
+        "registration_sha256": "c9da57f0d95805fe56b9a005b75e38749f0927dc6d177ab4ca39e57643f81e08"
+      },
+      "GF2_PMS2__L1A0001416140-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248907000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1416140.tif",
+            "size": 57050407
+          },
+          {
+            "mtime_ns": 1785248907000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1416140.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "b98c5ea7a03e9d32466de5c7fabb15930abc1435d48edf5faa15b74c2c4ee366"
+      },
+      "GF2_PMS2__L1A0001433318-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0001448894-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785271872000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1448894.tif",
+            "size": 54116757
+          },
+          {
+            "mtime_ns": 1785271872000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1448894.tif",
+            "size": 4223
+          }
+        ],
+        "available": true,
+        "registration_sha256": "5ee8e3beea696aa3cc03df574a7004df71b4e802302789a72b317244df5096d9"
+      },
+      "GF2_PMS2__L1A0001457157-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785271985000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1457157.tif",
+            "size": 53824231
+          },
+          {
+            "mtime_ns": 1785271985000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1457157.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "e4143bc75983da114ce3a78597489b086058cbece10f8cc08451a34534814151"
+      },
+      "GF2_PMS2__L1A0001465929-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272176000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1465929.tif",
+            "size": 49820255
+          },
+          {
+            "mtime_ns": 1785272176000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1465929.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "68145b57f2b33489ccf01e2d6c15a1b59604bf784885999eb8458bf085b5e1cf"
+      },
+      "GF2_PMS2__L1A0001490885-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248908000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1490885.tif",
+            "size": 53321201
+          },
+          {
+            "mtime_ns": 1785248908000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1490885.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "21cad352dbdfe5bacbe40b1f0dc7fb2939affa4ccf8a2a990ce220effb88629d"
+      },
+      "GF2_PMS2__L1A0001537636-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272307000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1537636.tif",
+            "size": 57694901
+          },
+          {
+            "mtime_ns": 1785272307000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1537636.tif",
+            "size": 4943
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a930591dee5feaa8625f4af5ba03e6868c4621386c35323b462f55b2df4d174b"
+      },
+      "GF2_PMS2__L1A0001537637-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272308000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1537637.tif",
+            "size": 57667983
+          },
+          {
+            "mtime_ns": 1785272308000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1537637.tif",
+            "size": 4943
+          }
+        ],
+        "available": true,
+        "registration_sha256": "a22774ea33233bee667049e079509e45924c31bebf9c2dcb40ec2d58c211ea76"
+      },
+      "GF2_PMS2__L1A0001566653-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272527000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1566653.tif",
+            "size": 70371629
+          },
+          {
+            "mtime_ns": 1785272527000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1566653.tif",
+            "size": 5296
+          }
+        ],
+        "available": true,
+        "registration_sha256": "4fb3c187a20ca75b5c19598efb912755f660ad094b7f7887a7a12956b5ed783c"
+      },
+      "GF2_PMS2__L1A0001566654-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272528000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1566654.tif",
+            "size": 70436061
+          },
+          {
+            "mtime_ns": 1785272528000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1566654.tif",
+            "size": 5295
+          }
+        ],
+        "available": true,
+        "registration_sha256": "dfe0bb305eeed792d5e0ef5fe6cf6b3adb05c6dc9301a7289e25e17e018fb897"
+      },
+      "GF2_PMS2__L1A0001574001-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272750000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1574001.tif",
+            "size": 64990401
+          },
+          {
+            "mtime_ns": 1785272750000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1574001.tif",
+            "size": 5307
+          }
+        ],
+        "available": true,
+        "registration_sha256": "5c29bd53381b68ae79cb267f1c9375c99e527bd7c44e8ba6185cce11a59dad02"
+      },
+      "GF2_PMS2__L1A0001577567-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785272910000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1577567.tif",
+            "size": 52282031
+          },
+          {
+            "mtime_ns": 1785272910000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1577567.tif",
+            "size": 4244
+          }
+        ],
+        "available": true,
+        "registration_sha256": "101241c22c38eecc2c79005220f5b4f836e4f77abbe26a91956dc447ab7af52a"
+      },
+      "GF2_PMS2__L1A0001633212-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785273029000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1633212.tif",
+            "size": 52974551
+          },
+          {
+            "mtime_ns": 1785273029000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1633212.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "2839c6e70ea49177cc6c39b05b3f67007c00a719b02c30e29fab10f321ac9c9d"
+      },
+      "GF2_PMS2__L1A0001642620-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0001668457-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785266277000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1668457.tif",
+            "size": 66770115
+          },
+          {
+            "mtime_ns": 1785266277000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1668457.tif",
+            "size": 5296
+          }
+        ],
+        "available": true,
+        "registration_sha256": "4817557e566690a1461e83d4bc9323d79c36dfc751dc08c4d8b7dc966f2e6214"
+      },
+      "GF2_PMS2__L1A0001708232-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248908000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1708232.tif",
+            "size": 72480869
+          },
+          {
+            "mtime_ns": 1785248909000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1708232.tif",
+            "size": 6084
+          }
+        ],
+        "available": true,
+        "registration_sha256": "09bea03509983888300dc52a4a387d8eb825f9096afebe8fd334c5007f58c266"
+      },
+      "GF2_PMS2__L1A0001708259-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785032294000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1708259.tif",
+            "size": 72776561
+          },
+          {
+            "mtime_ns": 1785032294000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1708259.tif",
+            "size": 6084
+          }
+        ],
+        "available": true,
+        "registration_sha256": "0983ec8b61dda0dbe68af7ef467520e470255742b0917671c940e44640aa02d8"
+      },
+      "GF2_PMS2__L1A0001708261-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785273260000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1708261.tif",
+            "size": 72854395
+          },
+          {
+            "mtime_ns": 1785273260000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1708261.tif",
+            "size": 6084
+          }
+        ],
+        "available": true,
+        "registration_sha256": "5c47689e3b1153f1f6044500c3f7a956db7780b00d16106de523ad55b3f24846"
+      },
+      "GF2_PMS2__L1A0001723989-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785273405000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1723989.tif",
+            "size": 53367529
+          },
+          {
+            "mtime_ns": 1785273405000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1723989.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "d43aefa13aabc207ef8b30009055d0f6b61ad0518a7ca092b09c8b6b7e07cd35"
+      },
+      "GF2_PMS2__L1A0001723991-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785263032000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1723991.tif",
+            "size": 53085021
+          },
+          {
+            "mtime_ns": 1785263032000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1723991.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "71d2c6839ae2c679587609493e2fc7565767b9d0ca2d9e700e272625ade657dc"
+      },
+      "GF2_PMS2__L1A0001746797-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785273617000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1746797.tif",
+            "size": 57070097
+          },
+          {
+            "mtime_ns": 1785273617000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1746797.tif",
+            "size": 4578
+          }
+        ],
+        "available": true,
+        "registration_sha256": "1d537fb2df16f3d71e9fe2e169e6f58b2a62832bf4c13cba9deb270429836ac0"
+      },
+      "GF2_PMS2__L1A0001757320-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785273934000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1757320.tif",
+            "size": 65493771
+          },
+          {
+            "mtime_ns": 1785273934000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1757320.tif",
+            "size": 5307
+          }
+        ],
+        "available": true,
+        "registration_sha256": "401aa5f6876581af46be44a5af5f634a5e6a814e4c06c5e66cde20143793f92e"
+      },
+      "GF2_PMS2__L1A0001757483-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785267057000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1757483.tif",
+            "size": 61536243
+          },
+          {
+            "mtime_ns": 1785267057000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1757483.tif",
+            "size": 5296
+          }
+        ],
+        "available": true,
+        "registration_sha256": "641a39a208e0051f83662222ac34c1f001911a1820b0c4461ed98547bc9edcfd"
+      },
+      "GF2_PMS2__L1A0001757484-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785267058000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1757484.tif",
+            "size": 61696633
+          },
+          {
+            "mtime_ns": 1785267058000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1757484.tif",
+            "size": 5296
+          }
+        ],
+        "available": true,
+        "registration_sha256": "05b3b576d26c8a7b17a382ff404de537f73aa6735e8cc83f8926dee6bef12fc0"
+      },
+      "GF2_PMS2__L1A0001768200-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785274046000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1768200.tif",
+            "size": 52500455
+          },
+          {
+            "mtime_ns": 1785274046000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1768200.tif",
+            "size": 4245
+          }
+        ],
+        "available": true,
+        "registration_sha256": "21090e91140ab36cda27806b5dda7e96717327b9da71446234f5373231a52697"
+      },
+      "GF2_PMS2__L1A0001787080-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785267843000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1787080.tif",
+            "size": 57189817
+          },
+          {
+            "mtime_ns": 1785267843000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1787080.tif",
+            "size": 4943
+          }
+        ],
+        "available": true,
+        "registration_sha256": "063a5d9efb549fd4631f0ee281066d67b7141edd80f91481ed37d30e9c7ec41b"
+      },
+      "GF2_PMS2__L1A0001787089-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785274209000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1787089.tif",
+            "size": 57211819
+          },
+          {
+            "mtime_ns": 1785274209000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1787089.tif",
+            "size": 4943
+          }
+        ],
+        "available": true,
+        "registration_sha256": "0d5f9525808c6e385e3f977a6678cc2fa3035b481aaf589fb16e7e83fb0335ce"
+      },
+      "GF2_PMS2__L1A0001787577-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785274322000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1787577.tif",
+            "size": 53806201
+          },
+          {
+            "mtime_ns": 1785274322000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1787577.tif",
+            "size": 4568
+          }
+        ],
+        "available": true,
+        "registration_sha256": "4c1bc4b3cb1318bcdac001d2bd8506d9f23bc7c4959c19797fc5fb75cd034255"
+      },
+      "GF2_PMS2__L1A0001799009-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248909000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1799009.tif",
+            "size": 56613145
+          },
+          {
+            "mtime_ns": 1785248909000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1799009.tif",
+            "size": 4567
+          }
+        ],
+        "available": true,
+        "registration_sha256": "5b6dc670dc17846401140a32ac1359af981103de161dc421c2c8b851488d0c92"
+      },
+      "GF2_PMS2__L1A0001799010-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785274449000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1799010.tif",
+            "size": 56583639
+          },
+          {
+            "mtime_ns": 1785274449000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1799010.tif",
+            "size": 4567
+          }
+        ],
+        "available": true,
+        "registration_sha256": "662fb885d274f88fcbc6b17721e3bd44c1050ccbd87201bbdc4838a05b01c65b"
+      },
+      "GF2_PMS2__L1A0001824765-MSS2": {
+        "assets": [],
+        "available": false,
+        "registration_sha256": null
+      },
+      "GF2_PMS2__L1A0001876775-MSS2": {
+        "assets": [
+          {
+            "mtime_ns": 1785248910000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/SAR/1876775.tif",
+            "size": 48649709
+          },
+          {
+            "mtime_ns": 1785248910000000000,
+            "path": "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/VALID/SAR/1876775.tif",
+            "size": 4234
+          }
+        ],
+        "available": true,
+        "registration_sha256": "819a14a9f9382cd68a9298772b254809253534951127d15dcea8fddb358a58e6"
+      }
+    },
+    "sar_size": 166,
+    "scope": "oof_train96",
+    "seed": 1337,
+    "short_input_size": 512,
+    "train_ids": [
+      "GF2_PMS1__L1A0000575925-MSS1",
+      "GF2_PMS1__L1A0000647767-MSS1",
+      "GF2_PMS1__L1A0000647768-MSS1",
+      "GF2_PMS1__L1A0000647770-MSS1",
+      "GF2_PMS1__L1A0000962382-MSS1",
+      "GF2_PMS1__L1A0001015646-MSS1",
+      "GF2_PMS1__L1A0001015648-MSS1",
+      "GF2_PMS1__L1A0001037899-MSS1",
+      "GF2_PMS1__L1A0001094941-MSS1",
+      "GF2_PMS1__L1A0001104323-MSS1",
+      "GF2_PMS1__L1A0001112719-MSS1",
+      "GF2_PMS1__L1A0001217916-MSS1",
+      "GF2_PMS1__L1A0001290139-MSS1",
+      "GF2_PMS1__L1A0001293546-MSS1",
+      "GF2_PMS1__L1A0001335463-MSS1",
+      "GF2_PMS1__L1A0001471230-MSS1",
+      "GF2_PMS1__L1A0001491417-MSS1",
+      "GF2_PMS1__L1A0001491423-MSS1",
+      "GF2_PMS1__L1A0001491484-MSS1",
+      "GF2_PMS1__L1A0001517689-MSS1",
+      "GF2_PMS1__L1A0001537716-MSS1",
+      "GF2_PMS1__L1A0001553848-MSS1",
+      "GF2_PMS1__L1A0001642566-MSS1",
+      "GF2_PMS1__L1A0001647941-MSS1",
+      "GF2_PMS1__L1A0001660727-MSS1",
+      "GF2_PMS1__L1A0001668483-MSS1",
+      "GF2_PMS1__L1A0001680851-MSS1",
+      "GF2_PMS1__L1A0001734328-MSS1",
+      "GF2_PMS1__L1A0001765572-MSS1",
+      "GF2_PMS1__L1A0001791738-MSS1",
+      "GF2_PMS1__L1A0001792971-MSS1",
+      "GF2_PMS1__L1A0001798945-MSS1",
+      "GF2_PMS1__L1A0001910522-MSS1",
+      "GF2_PMS2__L1A0000564692-MSS2",
+      "GF2_PMS2__L1A0000635115-MSS2",
+      "GF2_PMS2__L1A0000647892-MSS2",
+      "GF2_PMS2__L1A0000658636-MSS2",
+      "GF2_PMS2__L1A0000658637-MSS2",
+      "GF2_PMS2__L1A0000736601-MSS2",
+      "GF2_PMS2__L1A0000788763-MSS2",
+      "GF2_PMS2__L1A0000789259-MSS2",
+      "GF2_PMS2__L1A0000851345-MSS2",
+      "GF2_PMS2__L1A0000958144-MSS2",
+      "GF2_PMS2__L1A0000958146-MSS2",
+      "GF2_PMS2__L1A0001015594-MSS2",
+      "GF2_PMS2__L1A0001015596-MSS2",
+      "GF2_PMS2__L1A0001015597-MSS2",
+      "GF2_PMS2__L1A0001028977-MSS2",
+      "GF2_PMS2__L1A0001035795-MSS2",
+      "GF2_PMS2__L1A0001092725-MSS2",
+      "GF2_PMS2__L1A0001116443-MSS2",
+      "GF2_PMS2__L1A0001116444-MSS2",
+      "GF2_PMS2__L1A0001119057-MSS2",
+      "GF2_PMS2__L1A0001140983-MSS2",
+      "GF2_PMS2__L1A0001167480-MSS2",
+      "GF2_PMS2__L1A0001206072-MSS2",
+      "GF2_PMS2__L1A0001246645-MSS2",
+      "GF2_PMS2__L1A0001251799-MSS2",
+      "GF2_PMS2__L1A0001251800-MSS2",
+      "GF2_PMS2__L1A0001336975-MSS2",
+      "GF2_PMS2__L1A0001367842-MSS2",
+      "GF2_PMS2__L1A0001389317-MSS2",
+      "GF2_PMS2__L1A0001393716-MSS2",
+      "GF2_PMS2__L1A0001396034-MSS2",
+      "GF2_PMS2__L1A0001416140-MSS2",
+      "GF2_PMS2__L1A0001433318-MSS2",
+      "GF2_PMS2__L1A0001448894-MSS2",
+      "GF2_PMS2__L1A0001457157-MSS2",
+      "GF2_PMS2__L1A0001465929-MSS2",
+      "GF2_PMS2__L1A0001490885-MSS2",
+      "GF2_PMS2__L1A0001537636-MSS2",
+      "GF2_PMS2__L1A0001537637-MSS2",
+      "GF2_PMS2__L1A0001566653-MSS2",
+      "GF2_PMS2__L1A0001566654-MSS2",
+      "GF2_PMS2__L1A0001574001-MSS2",
+      "GF2_PMS2__L1A0001577567-MSS2",
+      "GF2_PMS2__L1A0001633212-MSS2",
+      "GF2_PMS2__L1A0001642620-MSS2",
+      "GF2_PMS2__L1A0001668457-MSS2",
+      "GF2_PMS2__L1A0001708232-MSS2",
+      "GF2_PMS2__L1A0001708259-MSS2",
+      "GF2_PMS2__L1A0001708261-MSS2",
+      "GF2_PMS2__L1A0001723989-MSS2",
+      "GF2_PMS2__L1A0001723991-MSS2",
+      "GF2_PMS2__L1A0001746797-MSS2",
+      "GF2_PMS2__L1A0001757320-MSS2",
+      "GF2_PMS2__L1A0001757483-MSS2",
+      "GF2_PMS2__L1A0001757484-MSS2",
+      "GF2_PMS2__L1A0001768200-MSS2",
+      "GF2_PMS2__L1A0001787080-MSS2",
+      "GF2_PMS2__L1A0001787089-MSS2",
+      "GF2_PMS2__L1A0001787577-MSS2",
+      "GF2_PMS2__L1A0001799009-MSS2",
+      "GF2_PMS2__L1A0001799010-MSS2",
+      "GF2_PMS2__L1A0001824765-MSS2",
+      "GF2_PMS2__L1A0001876775-MSS2"
+    ],
+    "updates_per_epoch": 480,
+    "views_cache": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/views_manifest.json"
+  },
+  "data_files": {
+    "/archive/hot0/yeqi/convnext25_full120/control/data/boundary_manifest.json": "ac443679fc47e42743ea4798a770db776d964cff637e3031c18e84721c98cfbf",
+    "/archive/hot0/yeqi/convnext25_full120/control/data/views_manifest.json": "0589806e163686daf9f6f5a2de2390abacbf2c0cf77f8b7b9404acd34bde72ba",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015594.json": "f385f6caebf95bf3752c978c5a2a211274720196e7955782ed880b9db4b060bc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015596.json": "5e3eec010ff7fb62c6104196205fce12566241e2b4ebfa2a3e25d65b373ba195",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015597.json": "78fffdfc50acf655afbb966924f276788506738b03fc27f6a257dab87fa4e87a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015646.json": "cf43576e981dd73bf641cf0cf76c26b3a364936819f23d2cd3f7359797b25cdc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015648.json": "44f295d820522e513bacd7daaa42f0817551685dd50126a91a93594068db8f8e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1015649.json": "7334470fed0c08d4f73cd556b8b2650ce722ea12fea1c13add032bcda96131b3",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1028977.json": "46cf86d2b69cabc7d6e417bd4c6a8c0db999960ba9dcdf5c1c32ac7a584acad3",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1035795.json": "c90e3173edb89184e3d0417bd02788b92b23b904720126c0ce792f5294b18485",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1037899.json": "2df69df5d18fd87dc4c0a822ad0ebdcb130716053c35b1e499d5283c94a5ffd5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1064469.json": "ab1ddc53ca62a81f975832bcbb9ab7be0071bfc65767432a8284b91e26508f17",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1092725.json": "da1c0eaf1f079b5eb6bfc246774b3ad6e2c2283ce6a181c3761be912779b8957",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1094941.json": "afdc0111cc0e4f0ada9ff01aaf065d3df6dbb56f23bb7ed3f0578b9b6a8f8867",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1104323.json": "f6a26aec91eb8163fe381435e6ba34471a1056d0d63060252e386fa58c585060",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1112719.json": "ff3759a0c889a75dbffa8c270028307d6f3f67936042be91e482e72b5ffc5e53",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1116443.json": "6e6c11f7013569465ca71ceb5f7bc4e247909c326417348d76e842cc6c0bc619",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1116444.json": "28279ca0b0cc0acd7973f7a34f1877cf83b0936d32f93ccaec9daba55190d3e5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1119057.json": "55e90bd465d7262cada6548198500a525d11adbd49f830934757c9c670e6d590",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1140983.json": "ed2447cff94062e76782f0b3de6b6e6013fe1b9e49a0cca1f6384b539fc040cb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1167480.json": "d681d615367d28d155cba5e8d9f10e6b86a16bf157777e988cc72a3e5b954989",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1169100.json": "d639e494776e645a8d2f0a9b04e7e56cc863f53fe207132f7e17535f0755cbf6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1206072.json": "75948f340c43d7ccd165d9ee94242092130dfbc06fb3bbb0eabdd1b4441bfb73",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1217916.json": "9e83c702d16c724f9feb7c24423011fcc0446e133dc3bceecb0aa8778cc652a7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1246644.json": "1002469175bd70693780541f791e8f0654ccfdb05671d88649f5210477b5d1b5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1246645.json": "4be47b50d579e57650591e2089fd37d002921bbb735adae34a8afb2da8ae2d33",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1251799.json": "0ad463d0b9003e48da643ad55eaafae76675cb884f2ffb2d182cb1d9c5a1596a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1251800.json": "59b538da6bc01f01a8eabd40f3ce64234ea1e32ab9deffb3092c11ead75047f1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1290139.json": "1fe9d5f305fb80bb5ebee534ca80b5f56e3a2711c6517c39bc686d4177fe0339",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1293546.json": "21219a8ed6d23d5e919bcd48a6393d73eb691595bc5a3dfe9b26fb99f47181d0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1335463.json": "a77115f95cf2456748652106700757d1471f19b23cce5590e873672519c63238",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1336975.json": "22a26fde6f1c97c5482712ce6441238b280ed212121cf620412e3238f92b254b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1367842.json": "d5bdf9ca49382b09c82ec963168a143ce33e437f6becd9a3ee294d772dd9ba5a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1389317.json": "ee6cb9402abcedfc73e20dbf065721626d798bf67a9f7ab00b6b5ff4650ead39",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1393716.json": "c02262b4fa35987da2ccc605728a96afa8deb3831923713d13d6d5b3c356d4c9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1396034.json": "4a35989954f1f734e3429f4a5ec1e9875039b7c3218113c612df3f42111733e4",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1396040.json": "19bfe82f1817d2239425268784a8e93fb9edc9412bbc6581428b7d4a1dfd8b1c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1416140.json": "5453b6b38eefe0bbaf92ab7c28b5c90b080a5b763dfc6ac05d2cb51b130a8568",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1433318.json": "6cd06ee97f959b97a81a55c05d93f41ac933d7caa11409c4d1fc3f1f8a739f76",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1448894.json": "15a7aeca0ae7f3481ecd495c610a9f777b1bb598a001c946cd81d1b3a2d569e3",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1457157.json": "1242fed32221d9b008291e3b11bcd05320208cbb535fcd83bc984b69f6179f46",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1465929.json": "07b299d4514d8f494916d499e05438a80f9c7d6fc534c331e0bd3c890ffd6410",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1471230.json": "905d41a6bdaf772a07198f004c65cf33aa531012f188804e74fa2563e84d78f5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1490885.json": "75860c4ca5e2991786b06e77af03097cdb2492970b8c6ce6dadb1a8f7803afbf",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1491417.json": "2ba50e2b7954d3456c2907213a9e0dce711a030d5186f6fd81cf47813ed85b86",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1491423.json": "020b55599897f2030316f95066bb698993df8f4be69342f214dcda145e575ae5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1491484.json": "ad513dad9775f027ae3ab992ba3a34f2cbd333971539dd93938e05a883578057",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1517689.json": "57fd5e1146d2ca8aa5795d11f39ae0b9abab29b8c3ab62f82f4a7b36e2de1fdf",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1537636.json": "b3f98533ab77cd52bde5bab1408858a4514ba4a6e7017cc1266f438411668823",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1537637.json": "199d9956f20943eeda04ddb835f0980b200fb72e79ad196a84d15e46d1ae914a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1537716.json": "819009ee03b69defec3374244d0708101c159335b154c4572912f4e8cb6f0999",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1553848.json": "a266da743eee7113be092c1f96f6e57c2f8b4d0d8925ea7c0c8b51845c5f20fb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1562063.json": "59b6231959f6a6d109645654ab811eb011706ffa1d9de1d7448269baf4d956d7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1563129.json": "eb2223e3c06b8fe88b7a9ae0fe100739a1ad038818b39b6891afe7d50fca01a9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1566653.json": "afa83296e065033bb6e142fb119f8d329148fb8e1e670c67359f96e6c58a2e90",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1566654.json": "f7d35d3aa61ec1bd7246b60433d54a0f91221677e8da44e21d88356f20812455",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1573999.json": "fe41abb9d5fa2825f51d50acdfc79c4abeece00e6ff3dbe136418402cf057b05",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1574001.json": "f8cad762f2f848c9482fc26f30517b639f143de5596e66f8b2fc92530d0bfc01",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1577567.json": "096cddd295e35a3a56d152fcd1880045aa4f2eb93b26155a3a5391883aa64d70",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1625023.json": "9ac31bab23b8ff8edec6b9e8d6982b25b07a5eb41bf30ea57a61d54001fa95fb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1633212.json": "c31ecb573455ebc5cd76af0ffa6477d0e13e83ea1b5588f77ecf2d9ea15b0eb7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1642566.json": "a8f622cf03b084a3d7c4b2815b18a1fa5fb8c38375d2a525ea0b465c2e1f8b02",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1642620.json": "f93b24c585dd483b28b7f3707cab83c41213697dc516ca726676c80b0e2cde5f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1647941.json": "3279840c2067ebce8f04eab2e80c2197af0b03b40271cc15786d74eb6a423d8d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1660727.json": "adf30b481375dc3f267cc22852f1a216691d35b477720c79497dbdfd252e9f07",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1668457.json": "441fcab46f9dbdafd7bff9dc93833a19953e187b4f546d1485c1ecaa27e1a28e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1668483.json": "c48968bb2b4b9a13f36c02ab175612735d30aed75300f53b0839004b26c75df1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1680851.json": "26b3d989578f688f4c837e2bc5d002653fe88e9bab7895839aebfb37134ab144",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1680853.json": "886dedb6fd1072d8b0c903acec5df7b54446236bba6151e0617cddba2a619f5c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1708230.json": "3a4819b01919e8f3528e940eb497bfe2db28ae3c5afa74f657f9d1cb08b44206",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1708232.json": "8648e669510d79f64d4459dd6c07c6464009f5905e376890333508f571724920",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1708259.json": "7b90a50097dab6fe402187d3a1c7d0f55b8f8ea37c4ce6b4e4b4af5c3855bddd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1708261.json": "c2914bc1cd22823dd7fbc5b47f4cd39a077047feb16d7dcaa5f8269a715d69b1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1723989.json": "ff9cbc35b44c77af0707dcc3d556d9b5cd1e3b83cca081afc0698efdca7eed6a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1723991.json": "e297138eb7ae5c225827c80285570b109043a1b09311949e02ac00a3a06d4ff9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1734328.json": "bc4a40ad1a532e441dba5d4bdd8a3cf3abf59b2ada3399f8b6ba87590866d769",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1746797.json": "c6b5c9b132777fe6af34cc30b1330dc3d1f9bcef166037050a4adb4590fbfa23",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1757317.json": "70f66086100058fa90c2d097fd30e976adb553b7e42afe159bf9c095d73f15c9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1757320.json": "60cd56ba83bb5011d5fb4fafaa44875e64872febe6c8e63be64a05b6fa02b2cb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1757483.json": "a4b6b683085457da606cb728055ba2aa7bbab587abb23d16d3f235e321e81f97",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1757484.json": "0b84e8a1daf06649f389461b3ccf8be3859ed5ac2b8740709fc1febae3d38d7a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1765570.json": "0fd78f42dc387778636ea96e6b6818e90a2319eae3c38905bb0b3a9816bb4f9d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1765572.json": "d62d15d779c22fc6c8f7341a4858afc47649d07c29e4d79ae2ab9ec56b96387d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1767953.json": "680f33f43472d3ce04a466cec51bc28f003d8a0fad1154d4ab80da290ec4e450",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1768200.json": "ebd945947ff2203aa8f93a4f0211d6f534de5fb47eecf8dd623e1dfcc11b5161",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1787080.json": "64810ef875b4fda19afad74b36df6b484dbffb03dbbffbe3a34b2cced19b0c71",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1787089.json": "5a419f2b0281e35200ab30d23b9c75e0a85a67624708bd49871df88c492edbe9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1787577.json": "8d9fd76f7f9b5a95e5c28480cd1ea0b7b36be7df373e14a00088c4cf4e804fa1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1791738.json": "8d47dd12d13870baaf8bedd9ce2bd9320951b1a1a123abe958ab57067d31db7c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1792971.json": "84af57281505612e15947f35dce78023bc1c18153331dddb4018c85caac241c7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1793003.json": "2d211e27bace03294b1c60801c59db4c4a781364c14b477e88573f6b0323d721",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1798942.json": "b16e838a4abdcbf3f2a6c8c703da8fbcdf4c0dfd4de5366ea9e49517fcc57e46",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1798945.json": "796d82abec92c55cce7bc5432757e8bb509772688160c3a8bce28f487ae21fdc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1799009.json": "226c03ebfdd860fd43823a58b35d0d813cda95823a4950e73b7873895074989f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1799010.json": "687910aa9f5906aab5e11d52641e2b2002a01ae7f88e3b68e0fb30172934407f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1799015.json": "0afdc1be8e0be848edd284748e4802d6b202f006e9064f5532a6b3956fa8e7af",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1821711.json": "f75a5c186dc0687de735b6633afecaabb70403ea8fed72e9f69afb978719b6f1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1824765.json": "cdb46f346097b0b485aa51f552a52df0229046cd59187b9723ae329694e3886b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1838560.json": "3e015b1eea283594ae8c4724880623de57b9b0ea417d173a035907f68885e0ca",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1876775.json": "bf15a091bd0e02bb7e7491ca16dea48724e607c6886387a90c6a04d9f29458bb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1886305.json": "b532522a8c716952e02d181e58b5e0f891f1b481d7c17bf9d053aa674bbb28b5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/1910522.json": "ec9f4e0fba93192d880fc5c4c571e065f748bcdca3f02a21427c0cc14627c40a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/564539.json": "d08cc8f06012009cff38b7eb8ff8c937a121170b00b3256852687687a718c8c1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/564691.json": "6becb3e9324dcd958eeebfc65e0c6b54bb07f627e8b6146c91674d008c2a597e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/564692.json": "0114d011717d417ac8f4dc7b689112641891c6437c4d626d32aebf20118d7454",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/575925.json": "1eec473df7d2155cd99ba3f0825e193d59b99a6f1d179b9eb3b01b8c5721bc12",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/635115.json": "cd79a7a9b7a53cc8c4d344b107f929e7ea79e788e3ca063dd247723a11751e32",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/647767.json": "c3f2a1a9bbfbf75c92ef73d861ac404bce68a7e1c89f482e978f5391974317ad",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/647768.json": "b9ff2dba3c84f75dfb70cc69d0f3741dcde152e8b2fca0770cdb25f4dd6903ca",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/647770.json": "767d9aeada5f87f83d602d33a415826f67875e9275c423833a3ac625c28dbd4c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/647892.json": "1b85e5aca4be1876ca74ffb764bb48ba384d01cd15f10ad835dc1bc3cae3989d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/658636.json": "2351c8b996c393bb2e8b5e58327f1fd7e2a1ee81de3861b95bd10449332f5b06",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/658637.json": "656981d4271c32dbda12afe0efad8685ffbd3903e377803d5edaec566929c342",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/708367.json": "73d0c11bfe72278c313930e7e267be2038647ed8eaae1318e24bc1829b5bfccb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/736601.json": "fdbf20e32c03f1d963a1178cf5d2065e5033d6462de5de6543cceb443435298c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/788763.json": "f980ebb962226223f54dd645908bc4c26a672da9e2f9ec8bde849ae22659ce71",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/789259.json": "fc213b7412431c5edd0a7fb3b3a0749b95514af297e9d0b2384164ec381791c6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/851345.json": "fbc1896ffe2f31e23f2376e56edb2e10470be90093b5af2708a98a4d3c3ab6e6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/948183.json": "76a8aac85a1c1cb7ba7dd983194289b04118eab3f7cf6bbd3db1fe4715aafb77",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/958144.json": "94c10366c5adca8cea5a64f2ef0d8ddcf3e34558e6cdcc3dc62d058d762da7a7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/958146.json": "a3a9a11dcc11553bdbc6a8a25aff2b404e20ecd5adf4d81ebfdf273a0a26b864",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/META/962382.json": "d710900b5b42525c5b3170063fa9406a63b181d7bc651b91ec4457da719c7f1d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/availability.csv": "0c18de3b1c815c1233b6911b40224b2980de1604c2ed5c85c13d14f8ac72a017",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000564539-MSS1.json": "23a314ad3d0abd3ef3033d63baedc5bb4e47d6d2942fc12db784729ac9acffd9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000564539-MSS1.npz": "6521a73501233080f8e431cb0ba96e1d0dc5a590a1447d4a31db231fded73548",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000575925-MSS1.json": "d7b1b4beac7777575cff0055675144d0b48072941d69c34b6605a82dbb45e5fe",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000575925-MSS1.npz": "e3e7bf280830c8816455662ee01f43f7bb41e4281643c893100ff48838f9070f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647767-MSS1.json": "f5936646fa76f92e37dbb75bb579c6aa8656863e10d594d7b43a58f601b25a22",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647767-MSS1.npz": "edfaf4bf041d83cac1c679b0a8d13e0de990bdcd60a440c4fbf5e9694538fe67",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647768-MSS1.json": "cbee4eb3845a1229c9bbad095af6dede61d8917381bd372a3b604ae7ee72ae67",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647768-MSS1.npz": "1a2481ea3d3ea2999d51c4d8236bc1ec1f65a22729c24392e91ba52ba550c34e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647770-MSS1.json": "50a8735deaae7ea29a84133b006ed0ac884edb28e52fcb19fe639f0397fe1754",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0000647770-MSS1.npz": "ba1d606fc09a6e0c1020ef04607dfada8b360ab65916d3a670eb062dce2dedcd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015646-MSS1.json": "45bbd7c2f4d09231166a69c9769b03bc27684e6f599bbb287274d673d3b3fc49",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015646-MSS1.npz": "9d1726f3ef6f9491a2c252cc0f6dcf2a519433f400a2f248aca27646f5eee00d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015648-MSS1.json": "9c5b2fffc863192d423f5d922582f36051b32be718f908381d6130c503bd23fe",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015648-MSS1.npz": "a649d516f1a9f65bc5ff0d9cec2a81ef9ffe1e12bf597f19475ca4efd2ed2fcd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015649-MSS1.json": "d13c2cf21658b3530d2d33e5d2f2ca2c570d337108ae5c5551cbfe3166a53e68",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001015649-MSS1.npz": "deccaef5a363691ee6d72d0d338b406611ea8cd8ce6f9e95b5c434ba3d1f87cc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001037899-MSS1.json": "d1b7219096afb8b753418f3a353b920f7d4e7e180db47cb03e32acccffba70d6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001037899-MSS1.npz": "d96e5babf677e0bda86d59fe5c439aef1d55664066f4b3eb341aa6bb436293a1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001064469-MSS1.json": "f4b07399531c82f50d2fdca223a8a8a84f6946dbbc568cebcc8de4ab3072c663",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001064469-MSS1.npz": "9e894ec91421035b652c028078a2b36c0e4ce57e491f84eae2cd9f316b9033d6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001094941-MSS1.json": "b44388e8d02e5f3087c8464f659b89768ffd65dc70ba527129d577d4d7403016",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001094941-MSS1.npz": "6d420052b1513e0b5f572da8719267b6cb5abd4468f94949fefbea8cec834ea2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001104323-MSS1.json": "f383e1f264ee797154e935c23e8b9b7500a959802b1912651a1b6123c90f73c0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001104323-MSS1.npz": "f662d5a9ab54ecb073a7daf11d7affc378b081b8d37554c123c937eeab6d5798",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001112719-MSS1.json": "c71cd3a9c8b1e2210306a4897c0416b74a003f2c1cb214b6d07c48f495c0270b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001112719-MSS1.npz": "389b24e9ee485a0379d5f80377a6a382b48f3f6fbdcb5e3ebb05e9433f4f386e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001169100-MSS1.json": "51ab92ff4d10323bf985a63013b7a9563278a0b09b60b54f666ab000b3e45359",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001169100-MSS1.npz": "4d3dc2f37908544e3fcd96be38fe96ddb7848f257215aac3be7b811ad4dcb965",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001217916-MSS1.json": "287c4aad3f9a990734d870af472a25bf9dd2c1dafd0816d06d4363d589274ffa",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001217916-MSS1.npz": "2a4fd1c3b325872b8d1ea3eb5931791142ab2be98d86bfbe0d6e88ae79011064",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001290139-MSS1.json": "8f9e852cd216a9df4fd0bdb8f8d3508d8de81f903d08051823ad65682e6b64ff",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001290139-MSS1.npz": "2dd3b795a9b5e105160a26da9c3999d31030807c3c32a97334fddb59301fd47f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001293546-MSS1.json": "e4c8e088b6e9ec54e04c80744205fb3a917073cb51b8ee84cbacaa8b00809401",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001293546-MSS1.npz": "35a9b8c461c84b3264800a0e5752530d16af6a81844d0a7536783009effaedb2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001335463-MSS1.json": "1148f6d0be02dc8da80926e5def4205e64fffb733e48746bef6f470de1ea375b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001335463-MSS1.npz": "f8c962985d724f67e1e0e65802d3b734febbbd9b8855e6a60354cd72014815a2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001471230-MSS1.json": "d104a8411ffcc465db94d632d298b20ebe917d5121d033c5cb81bb63831e270f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001471230-MSS1.npz": "e9ad67b1053ea55be715ae4e7dd3895e3dafe4cd78a5ee78643df1e083e31549",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491417-MSS1.json": "fb1f48cb5b9bba9703c32398458b4e1fb059e21fd54dfdef6252714458d62da4",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491417-MSS1.npz": "bb2bbbdf8639c0943a53274f8db9a6f03cdd48a0c1be0eb12008253713bc7868",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491423-MSS1.json": "8782f9d10e57a3c5860306f3f5f92bf1a519a7f86d38410f5cb4b5b382752ea0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491423-MSS1.npz": "75d66c2b8718e127f9f209bc148dd7ff7c5480e11625202f8a764af0e962776d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491484-MSS1.json": "54ada7fd6444c69a48dd105a6f5722e929a2bb2342149e8ead60e41a8b267119",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001491484-MSS1.npz": "d8faf6da5dd1c93ab7359fcde2af1eae3aac032320dde75017a69ed971b9c185",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001517689-MSS1.json": "d1ff1b255dcec184ced971a173ce236f115fc0387bf39813005cea787fb3f865",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001517689-MSS1.npz": "bc252cd100b2f4d2fa1e8fa4859dc8b875caaac0bfe379a2de21597f98eb1b67",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001537716-MSS1.json": "68bc65d143fde4c530a357d5a14fb58e95d77ce5e415578ebdaff3a67c72b0d5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001537716-MSS1.npz": "37d894333392c9a8cd3882df6b96a7db1fff44719ef76223c5019808c82b0a07",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001553848-MSS1.json": "a17c04bb52019f5ea9725069502effbb6e0853e6ba48868fd24ee56db08fc92b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001553848-MSS1.npz": "92d1560c3b5f620eaa4e4a93ce4c92a477624e6265740b0a14c02d6f46aac602",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001562063-MSS1.json": "ea2d7df4ab63a6e0868a256a36a6fdbffffd49198a2de7d376b259a4f463c09b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001562063-MSS1.npz": "a9b5fe1c0bf3c9f595357723a935489e34754223acb7d2fd9cb7ee6e409cbcb2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001625023-MSS1.json": "41aafa73379139f7c752935c5c030afc65938bac975727114e5061d59ddcda9b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001625023-MSS1.npz": "ded9a53c0ad6229e1d63df7b375575f744fdd8e481284dd0076aab4b4914af8b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001660727-MSS1.json": "caea8fa61e1a9553e0e52c3e4cbfa7a698788685516eb3ca9c41d84b0c6d9d5c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001660727-MSS1.npz": "33ea2a0343abffd1a80fbc6fdef677b651079544b514f47b9b1901a3138797b6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001668483-MSS1.json": "c75b16a501dd34e74065c7b3b25fb435a533f021242ca1e382bac43d9e0ef88f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001668483-MSS1.npz": "9a46f4a20ed4cc189965b3965e917ad84106e1d36179ca995b395e6755e9fa22",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001680851-MSS1.json": "5360a5118d9ebef4c77c1e2b05202ab850d2723bfa5cfb7cdd603c3e9fdb6e75",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001680851-MSS1.npz": "276279a95b4e83a8846a5626a0caca050524f0de32b4c9512018f189e01fd58d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001680853-MSS1.json": "015717ad2fe437a56a9777baed516f444a11f3c4d7f113cb735746855008fde0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001680853-MSS1.npz": "20c94a9eccf2b1b2a3405dd7eda840e757af338a263bc4505577801ddafa914e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001734328-MSS1.json": "c2dd571445505d4cb22ab1d63182d3ecb99d913abf34df98a33be0b11943ffa0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001734328-MSS1.npz": "c377db26fc9f9d6c56478929c0dcf41be08514bd66e387026424cc4a63fe14d0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001765570-MSS1.json": "fcc9d6d3e611bfba4725ead2f0f4b47d056302b1a2b337ee922a6c2d369513e2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001765570-MSS1.npz": "fb2dfe17bd2fc8dab031d5c70ea750961c1dc523d20ede1b6459f24d0b5b5a4e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001765572-MSS1.json": "c3193fb6c8266972d365f31f825a806eb485ad4b91a619ce6818fc2a007c0fc5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001765572-MSS1.npz": "595b966118e3728de770508415bb393b20f938f53f029d10c72d4f0e433acddd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001767953-MSS1.json": "54680f091c9aa57b1b9c95a41e9e54f76e447e6442d053ca8f3cb95e43f7e6b1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001767953-MSS1.npz": "16a91aa290561b6c6ecd86cea30c7143cb056905886d05eb531837be9d18b9bb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001792971-MSS1.json": "c685b37ced9e31a211396025ef0fe772a548e177a3a8883ae82b4cdaa73e9654",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001792971-MSS1.npz": "2545e701b2f977083761c99e97ed9bceba9bd81a3c097f29fc93cf2cefc25383",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001793003-MSS1.json": "be486d7e93fb578bba67a779293b650e61ee2fa41f5032d52022e3624c2df367",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001793003-MSS1.npz": "ff865504d443bd6cc4692ea8091790df51706ca3c409ac7f3ddd4894e87b3256",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001798942-MSS1.json": "27a3cc2bf65408394c5df542ed6893bfaa474bb8205583ac8c963b959659f8c3",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001798942-MSS1.npz": "483fc968b1b6ef7ef45c6b829b05b2f8d38902bb70e6ede9aa13369c69c5301d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001798945-MSS1.json": "f888bd364c4edbe6f44ed879a10edc5c2d913d9e73a0dcd89dab93320b07577b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001798945-MSS1.npz": "be00db5a96a5d7fd5bcdf91d4a8626fd419a8557dfb24273ce09db8f93b2f1d6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001910522-MSS1.json": "044610fb97989b89d78c33ced7f271c5ba4afa6c97eb6c74576cc30e632d42c0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS1__L1A0001910522-MSS1.npz": "a1a438b02d6892ea0335a10ef5429b43445daf856dff9217c8b79f93b85fd0d9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000564691-MSS2.json": "dda5ddbbc96452655a2a402162f1b8dc1fb2e7a49fea062faa47e8d5fbd73e35",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000564691-MSS2.npz": "8582bae1f16cc4004c1f77f9d7ced42bfd960e7403348dae3192b199970c0606",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000564692-MSS2.json": "85f1a6acdb19175eb8f8b2b3bfccce2454167da997e6015142b58debbd4dd6ab",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000564692-MSS2.npz": "2ce5a53fae825ac24bfe2ffe9fca13d6b0f311e5645f152f285cdf57c899e8b0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000635115-MSS2.json": "ffb89ec97ae39bbb83fcb2e25e63a8c772ebc82e2d38a3861c8fe75efbdab97b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000635115-MSS2.npz": "2d8dddf552ba46125339f3a3ddc9fe0793ec7a28004fa72e349c40ab2eda15e0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000647892-MSS2.json": "60ce7ec0a40e5751522008d37763d608ff9a5c910f29bcf3bd61fdc5c9946795",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000647892-MSS2.npz": "a5b213fc0f2fe3699eee395f5a130f99f9470cb5be242736886bb86ebe168114",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000658636-MSS2.json": "fd12332af65a11c99a48201c20a9fb4fdf15f9cadeafb0b94887daa5077127a7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000658636-MSS2.npz": "23b6ff005b03a11596264152a19881d8cd2e22b76c4e9fbda7124bd2f558566f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000658637-MSS2.json": "fef30e36d0c310cb3311e487b0a26408d3358aa08c1e4098507944c77cd45747",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000658637-MSS2.npz": "483662b906cae0b99d37fb18536c79febf21b28fe08d69db6cf9185d558f993a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000789259-MSS2.json": "959dd13ad221d94320d687f50857bc9ce94d78082464a66aacd799e0d6bbda97",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000789259-MSS2.npz": "7235c8f7fcaddfbcbaeddcb1fd779320fa6bc5ef9456ed0a236d9fcf4ebcbe9d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000958144-MSS2.json": "19fb374a33fa7e09ab04cf9f1e446d9b03fc0ee6e5243d50dbd09d671a0b4589",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000958144-MSS2.npz": "f184877ab7d5f2b3ca114ffd8ba6919f020178a62a4f88278677bb3177fbefee",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000958146-MSS2.json": "d429f283d9103a3fc1db028a894c6839c77a73814669eeac502e7ccd1058fd15",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0000958146-MSS2.npz": "68d3fa16dcaa19228349e86e899517659345e830535345ac425248e7fb3fe85c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015594-MSS2.json": "c28ddcae40df4146c13475b45b1ee72b45ae43d664e0b17a413aaa95bad3ae68",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015594-MSS2.npz": "db220ecf212bd120823e4a3eaa8260c9865375990bf489e2f3d574c20e81b53b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015596-MSS2.json": "803ed70db8d8c16bfde9c96bea836b23c1a1da3b99ab08edf0044f39c1d82c6c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015596-MSS2.npz": "3947d786204d06ef1a05fd1444d41d80d3faf55a636ee8cfc7768bca6c61cd5a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015597-MSS2.json": "7aff05d42d8e4824f67fcb14bc6703d0e6822a0cec1f98244469a14c2a4df3dc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001015597-MSS2.npz": "0156bae6a1059838bd86f7b4ec6e5c924f088b5bb622be84dc52eacafae048a9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001028977-MSS2.json": "003accb0b69e83854c53612425ebd9875f85536b848be030030d3cfe6bede37d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001028977-MSS2.npz": "44addb247cfd0fc5aeb6c5473a1bd4d4877e473e920949fded66b33dc33e3198",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001035795-MSS2.json": "bb31a306990f1c9d2a199b353eb2718a064d8e69e5e2f4313651d86a8de2f1d4",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001035795-MSS2.npz": "60e6b5e4043e1c4d9fd49b026456b97a13cac8f5a44c56984a39e50fcc9832e0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001092725-MSS2.json": "fd506ee45af124c785e950872a3cc0ea478a9f805890224f43633bf1f3d6adbd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001092725-MSS2.npz": "2b630833b37750e4540bc0a88f48e83d6b58a0c7bdbe75539aa274ff9887de8e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001116443-MSS2.json": "accf99e67e18c44a820a908f9c1b80828fc01234517905d3cfd9d8dc196adb26",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001116443-MSS2.npz": "0a06fde53db17f190e4c45bce084d01e1f28f6ad9fab8220280fe7b4db8ae424",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001116444-MSS2.json": "646b374adee55864ea69a8436ccc930338ea161fbc585647c70e03ee5c8c8dd7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001116444-MSS2.npz": "a2396ced4aae4beabeae36fdc69f44acc2433fa22c0be12b4b043a7282482f2d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001119057-MSS2.json": "707cb5bc0b3fe1f3235414a5d1ba73ff878e9176ebbac5cadd05c1cb00198752",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001119057-MSS2.npz": "69e08393a6ed9ccde92f1bc01980c25bee9c7dd65a61146fc2eec95626574312",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001140983-MSS2.json": "e1a0651aa1d797d1eab6a0ae07b1307a3d6836ca63db6bad2291d47eb2171066",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001140983-MSS2.npz": "bc6c2f5a08096b490fa0f94a88106108ea0f68515a4d60d3b53c7739b029f8d9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001167480-MSS2.json": "b1cb14dd6ca78b19eab00852128ee12993a14e32f91f7b428f9c90940bde45d1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001167480-MSS2.npz": "444e45a0812401db92dcc5290ca772fe39b00bc52406fa77e67957c9ee125c40",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001206072-MSS2.json": "6131eb8a96f4e23306d6209a331bd87956faa6481b563520132d88f06e6efd6f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001206072-MSS2.npz": "78a3c433f330d4652a589bbb51ce58532a35010bb290e2b512b6a6cf1ef213f0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001246644-MSS2.json": "ccddacd054972227665beb82d1de12a70888e6500b8844f915c41fd480f80512",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001246644-MSS2.npz": "c920e572e0f552805b4d4c1d333a918fe534a8c1cdac3bcd3c06e3e2a19b83c6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001246645-MSS2.json": "4e2aaf68ebbdd7a7b4a06f8c2d9b138caf0cb4aaf3db1dba670899a709313148",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001246645-MSS2.npz": "8e5faa968540b4c960c574adb0a54f9713d0b7b1c6b7b06a0c98a691b5ea7bef",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001251799-MSS2.json": "0cf48abae46f83fcd0e063aaaee7edad65c34b1c365f5308b0ef48e97c9aa939",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001251799-MSS2.npz": "7f08918933d87820c6009bfdf8d81c9141b5d38c55bc4724ad97d4119b6faccc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001251800-MSS2.json": "70e3ce62ed8f7e8a34e6ef0b5327e2a1dfafa215822baa817b7ce01e57e01728",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001251800-MSS2.npz": "ecacfd26b50046ff9564ed24fe1d4146218002d11d8b95a2e3e9ee84606317b9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001336975-MSS2.json": "12aa2ff7384dd5fe59592182b870f74efdde94fea50dbc7e7ff6ce9678649a33",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001336975-MSS2.npz": "8ffbd3731d152ca616d5b80b8f1546e2b5e321fe4d0d34bdc88dfb2040dbaf20",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001367842-MSS2.json": "f6e5aeb771c59bd25d3628e086cdcea79720efb33ebb7b6e7aa6dd346e86f9ed",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001367842-MSS2.npz": "fe42a81749b505fb85efc947f0716def8288b886a2a8cc91ddf49a80eb0d743b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001393716-MSS2.json": "6fc47a732152900f7511af9e23481c2ffce00a71036dd91d846cdec7c8951202",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001393716-MSS2.npz": "a18a2c8fbaf6700ac5e166600854033321c50fd0414f2065171e237146d1edb5",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001396034-MSS2.json": "158ab603eaacee7f090bf80c7c093f1f6af154f132166a0afcf59b258897a401",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001396034-MSS2.npz": "c9da57f0d95805fe56b9a005b75e38749f0927dc6d177ab4ca39e57643f81e08",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001396040-MSS2.json": "25c25bedda032322761c65bf71209f627336ff11a9a255cf7848f577eb58f6fd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001396040-MSS2.npz": "b89ea65e2e6a8cc45e2f75665b8587174a96b136adb0d964f8062b9edff1c509",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001416140-MSS2.json": "f0bd672439b68e5fbb5cde77d5f964248a006b287671ba2361b90635537af0a6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001416140-MSS2.npz": "b98c5ea7a03e9d32466de5c7fabb15930abc1435d48edf5faa15b74c2c4ee366",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001448894-MSS2.json": "45ccc1f23ce540894ec384dfd92582ff0dbcca2cea6417060cd6b55462a8db98",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001448894-MSS2.npz": "5ee8e3beea696aa3cc03df574a7004df71b4e802302789a72b317244df5096d9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001457157-MSS2.json": "bdf4a94ad38c73f68eeed46e8a0dc6e26e4dafe007e5cced75d384cbdc81fac2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001457157-MSS2.npz": "e4143bc75983da114ce3a78597489b086058cbece10f8cc08451a34534814151",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001465929-MSS2.json": "2db336b96e346aa33b4a239f5109523a8b78b8cdcb03000aba22482bb0d572d4",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001465929-MSS2.npz": "68145b57f2b33489ccf01e2d6c15a1b59604bf784885999eb8458bf085b5e1cf",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001490885-MSS2.json": "d9143b28c7166f65cfc6e33dbfb59e10408efea2217f77c776e6e90d77732979",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001490885-MSS2.npz": "21cad352dbdfe5bacbe40b1f0dc7fb2939affa4ccf8a2a990ce220effb88629d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001537636-MSS2.json": "157e70836de5e064462870818ed2fec3f34ad5d17f8fc47e29ebf9adb5f1f582",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001537636-MSS2.npz": "a930591dee5feaa8625f4af5ba03e6868c4621386c35323b462f55b2df4d174b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001537637-MSS2.json": "f326b55769bd89db0e3e664c09a3bb998fc7da827c08281236058fd0c9f7d06d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001537637-MSS2.npz": "a22774ea33233bee667049e079509e45924c31bebf9c2dcb40ec2d58c211ea76",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001563129-MSS2.json": "d5a50c3ec902ec536f2392ede90fe2a12a746e85fb7acdd3c26f75d9b08b7386",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001563129-MSS2.npz": "30694e44299889b1d9e52e8f96438cca0bebf42cd1049c9352a9d517329a00e2",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001566653-MSS2.json": "8004ed99407acbdcbd98b99dd6c6d99b7d97efc9c0aba22d245dc7db7953cebd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001566653-MSS2.npz": "4fb3c187a20ca75b5c19598efb912755f660ad094b7f7887a7a12956b5ed783c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001566654-MSS2.json": "b26fd0696d0e03673aaf637df0543d5ce5ed2d1c772a1f97d407b7599d45c520",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001566654-MSS2.npz": "dfe0bb305eeed792d5e0ef5fe6cf6b3adb05c6dc9301a7289e25e17e018fb897",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001573999-MSS2.json": "c34d978feb22163afc220e53c849b1a432a01cc23c430e8e312b4bceb7b0c86c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001573999-MSS2.npz": "75e5b63d26f9761dc17890ccfddddfd75430a9a1b9feb39fb57786aa72781ade",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001574001-MSS2.json": "f067b4a3f9bcab37992c21971a93386ed1cb0e5b09f44a4d7c0f4b635d878733",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001574001-MSS2.npz": "5c29bd53381b68ae79cb267f1c9375c99e527bd7c44e8ba6185cce11a59dad02",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001577567-MSS2.json": "7610df0f87cce09ee442e84877f9183746159e50e6fcbf0c7d1484f13fd3ad7b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001577567-MSS2.npz": "101241c22c38eecc2c79005220f5b4f836e4f77abbe26a91956dc447ab7af52a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001633212-MSS2.json": "99d4a55d739e02e040bcf772b0f90fc8c90b7486ce7849bf7dd0a0b3ec72c953",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001633212-MSS2.npz": "2839c6e70ea49177cc6c39b05b3f67007c00a719b02c30e29fab10f321ac9c9d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001668457-MSS2.json": "2ee726e659422bc77334296729b6ad110d94e3098254b16714793ac531fc448a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001668457-MSS2.npz": "4817557e566690a1461e83d4bc9323d79c36dfc751dc08c4d8b7dc966f2e6214",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708230-MSS2.json": "c452ef49c97a8f1d8a5dde2ab624e3a59795479befddea8fe317c4b280c5a252",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708230-MSS2.npz": "72caea9db8ffbd14d3be9fb62785a82183f5a18a2fe3e4615916a88ff20a42f8",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708232-MSS2.json": "3d473d647d6ae1405b8b2d1c11b7cb18ae3b9eb590fd5827b879231c9d3df775",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708232-MSS2.npz": "09bea03509983888300dc52a4a387d8eb825f9096afebe8fd334c5007f58c266",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708259-MSS2.json": "cd872a27192b0ffcc0b2a760e0b8fc58ca82ce2a628d03dc0e88c8ffaf818305",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708259-MSS2.npz": "0983ec8b61dda0dbe68af7ef467520e470255742b0917671c940e44640aa02d8",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708261-MSS2.json": "31e91b6a2b357f2673fd031db5499e0ca2ea4c7a714ee08e0a23bbfa2a512070",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001708261-MSS2.npz": "5c47689e3b1153f1f6044500c3f7a956db7780b00d16106de523ad55b3f24846",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001723989-MSS2.json": "c50a1e85e63e309c199799673f12e63a831b3eb5bb38aea1968d3bc5cab709b7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001723989-MSS2.npz": "d43aefa13aabc207ef8b30009055d0f6b61ad0518a7ca092b09c8b6b7e07cd35",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001723991-MSS2.json": "a47ac064d70714486c4bd9d120ed4e20fc965dbca637a59b09fcbd30cd576a0c",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001723991-MSS2.npz": "71d2c6839ae2c679587609493e2fc7565767b9d0ca2d9e700e272625ade657dc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001746797-MSS2.json": "cc2073571fba394c057af10751d8f07aad71b1189233c39a7a965341a2cdd77f",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001746797-MSS2.npz": "1d537fb2df16f3d71e9fe2e169e6f58b2a62832bf4c13cba9deb270429836ac0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757317-MSS2.json": "3e861441dc834915cd9551e7a0444b0837bc9516dd8039b381543c6dfefdaf32",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757317-MSS2.npz": "365caf5045149f4342c2831d84d0b6475de6ea4cd8205f7cce46e12c441c1fb0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757320-MSS2.json": "cbd436f5ef424d431a1ee4b14730fc1d65872ea40aa672ad93770edeb275f5ce",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757320-MSS2.npz": "401aa5f6876581af46be44a5af5f634a5e6a814e4c06c5e66cde20143793f92e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757483-MSS2.json": "18f06cd47d3458fba049d6bce930387c5d0a07e5474bf768e99b0749c4169de3",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757483-MSS2.npz": "641a39a208e0051f83662222ac34c1f001911a1820b0c4461ed98547bc9edcfd",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757484-MSS2.json": "f9084d218698f1a220321ac4b004c0c8e115eff6f5705d8950970e97757044d0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001757484-MSS2.npz": "05b3b576d26c8a7b17a382ff404de537f73aa6735e8cc83f8926dee6bef12fc0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001768200-MSS2.json": "79ada24114d18b58d099fd138a0e46a08ed39e2fc8513ce3bdba47bb0f7e7afa",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001768200-MSS2.npz": "21090e91140ab36cda27806b5dda7e96717327b9da71446234f5373231a52697",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787080-MSS2.json": "8cc7b49bc251a86e23ec3ecc7854dcbd904fa6d72f0c8d0c15f53ba5f2e01ae1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787080-MSS2.npz": "063a5d9efb549fd4631f0ee281066d67b7141edd80f91481ed37d30e9c7ec41b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787089-MSS2.json": "5dc79f47efa03483ba8ccf894574c44f17fc2e9f41dc5266f2b1b8a0d71a18b7",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787089-MSS2.npz": "0d5f9525808c6e385e3f977a6678cc2fa3035b481aaf589fb16e7e83fb0335ce",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787577-MSS2.json": "bb495095376e92e9ae47e69b03bbcbb43c41bc340e0c3c054ea5e103979e7434",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001787577-MSS2.npz": "4c1bc4b3cb1318bcdac001d2bd8506d9f23bc7c4959c19797fc5fb75cd034255",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799009-MSS2.json": "0ef722c1cfeb7775d5bc0df22b7ffd3162835b0effd3db6de6840c74379790c4",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799009-MSS2.npz": "5b6dc670dc17846401140a32ac1359af981103de161dc421c2c8b851488d0c92",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799010-MSS2.json": "e5108c71ed3003baab6b2de61686e8b3c15dc0e76d214e1ba636d7e50a6ad48e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799010-MSS2.npz": "662fb885d274f88fcbc6b17721e3bd44c1050ccbd87201bbdc4838a05b01c65b",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799015-MSS2.json": "bc87feede545749429c3c4b704722572d2018beeca1e0b52682b857d9d9c3ffc",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001799015-MSS2.npz": "562b6a2e966867c650503e25b3c98e214850af9e67350ce21354680fbaccf409",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001838560-MSS2.json": "7253dddf7211e1fcb19f6400f306f30883bee591e88174d4e7cb62298dd31d0e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001838560-MSS2.npz": "a8d60a39a748b75eb87bdc5c504c4e54a6d179db1ed1476c60815fe5767953ff",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001876775-MSS2.json": "99547a81224d9fac619c2272e3cf19ddd9b2aa6aa8277296a58496a63134b00e",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001876775-MSS2.npz": "819a14a9f9382cd68a9298772b254809253534951127d15dcea8fddb358a58e6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001886305-MSS2.json": "52e65a158cdbd3162dfee6bedcafa6a9e879db60da8a6ac694cb1141ab395cd9",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/auxiliary/registration/GF2_PMS2__L1A0001886305-MSS2.npz": "df1a476fc348868370a0d55d1992e249db4b57dec9db3d05282b46bf3e03b5b6",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/metadata/ms75_oof_seed1337_fold_4_train_points.npz": "3904fb4e7b9482320e50984961cac4995f9be03f71a166f66c59dd1e2d2e3c9d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_0_heldout.txt": "036a836c765d18f932b9d0512921160cec08453a0b0f244b6574e3967536280a",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_0_train.txt": "12138004d46797832e8a5352fad328159d3b78368f04c5c9c30a64e084de76e0",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_1_heldout.txt": "58767ccc963537bbd1f58df3f0424d95422fd652c23e498c837935663972788d",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_1_train.txt": "b34f4cc61dba347fe3d1de85b20814643cbeb4b50a62463988ec87970e2d1daf",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_2_heldout.txt": "45ddacd593af48614d8eeba84637a37fcf4634fe9b14ceee8c0c57e28a09a0f1",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_2_train.txt": "330594327d8ecaa5eedf94040b0fe5122a274709d813855513678a4a82d47deb",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_3_heldout.txt": "cff55eab5e2b9a08f13e2cb20fa8b666e79f68a9827a7e53120a37623a4ad956",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_3_train.txt": "470e575129e38aaa32030071250cfda3caa54ce3299193e2ae94d3c0ad25a861",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_4_heldout.txt": "927edd4c50b78428cffee7d62dd8348ea4a2650eee1ac304f1d2fa26edde5980",
+    "/archive/hot5/yeqi/datasets/fbponlymsdata/splits/ms75_oof_seed1337_fold_4_train.txt": "4aac97b4b97501de865043ef8c8696b5de09cfdc19208a1913d1a716c703119d",
+    "/archive/hot5/yeqi/experiments/TCMMSline3/releases/ms75_20260808/line3/ms75_oof_miner_seed1337/fold_plan.json": "d5b83ad7faa4841ff2984b2c5d8b89f9924b28046e4e9e4c8fb884c880bb019e",
+    "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/boundary_manifest.json": "ec8f1f9b6ab650ec2ca25794109b2d5404ffd742298abfa941caf463c8ab26c9",
+    "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/plans_manifest.json": "0ec76d0b3be5dc357307bd68b551aa1315678fd8b152b5161cea0f5042f5b29a",
+    "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/raw_manifest.json": "68dc5f0e59c0332ebf98ee69d60e87ede509e2327942aaccc1ee224ba6007a95",
+    "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/views_manifest.json": "26e279e1725f9a50059510e6800c24392a599b6cd864caa185ea4bf93c7d1670",
+    "/dev/shm/yeqi_convnext25_full120_gpu567_20261009_v1/raw/manifest.json": "48e38794425f4f34fcfc678f902d005348f56c5e34ea96f1368472c8b1befff3"
+  },
+  "effective_batch": 64,
+  "epochs": 17,
+  "expert_train_scene_hash": "4aac97b4b97501de865043ef8c8696b5de09cfdc19208a1913d1a716c703119d",
+  "fold_data_file": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/fold_data.json",
+  "fold_data_sha256": "f20019e1d1efdc3e97cc673f9e449299f95f3301ac5d0d830a2a86a40ce3beee",
+  "fold_id": 4,
+  "gpu_uuid": "GPU-ae5763f5-19d9-aefc-d4ad-12d87e3a3ff8",
+  "held_ids": [
+    "GF2_PMS1__L1A0000564539-MSS1",
+    "GF2_PMS1__L1A0000708367-MSS1",
+    "GF2_PMS1__L1A0001015649-MSS1",
+    "GF2_PMS1__L1A0001064469-MSS1",
+    "GF2_PMS1__L1A0001169100-MSS1",
+    "GF2_PMS1__L1A0001562063-MSS1",
+    "GF2_PMS1__L1A0001625023-MSS1",
+    "GF2_PMS1__L1A0001680853-MSS1",
+    "GF2_PMS1__L1A0001765570-MSS1",
+    "GF2_PMS1__L1A0001767953-MSS1",
+    "GF2_PMS1__L1A0001793003-MSS1",
+    "GF2_PMS1__L1A0001798942-MSS1",
+    "GF2_PMS1__L1A0001821711-MSS1",
+    "GF2_PMS2__L1A0000564691-MSS2",
+    "GF2_PMS2__L1A0000948183-MSS2",
+    "GF2_PMS2__L1A0001246644-MSS2",
+    "GF2_PMS2__L1A0001396040-MSS2",
+    "GF2_PMS2__L1A0001563129-MSS2",
+    "GF2_PMS2__L1A0001573999-MSS2",
+    "GF2_PMS2__L1A0001708230-MSS2",
+    "GF2_PMS2__L1A0001757317-MSS2",
+    "GF2_PMS2__L1A0001799015-MSS2",
+    "GF2_PMS2__L1A0001838560-MSS2",
+    "GF2_PMS2__L1A0001886305-MSS2"
+  ],
+  "held_scene_ids": [
+    "GF2_PMS1__L1A0000564539-MSS1",
+    "GF2_PMS1__L1A0000708367-MSS1",
+    "GF2_PMS1__L1A0001015649-MSS1",
+    "GF2_PMS1__L1A0001064469-MSS1",
+    "GF2_PMS1__L1A0001169100-MSS1",
+    "GF2_PMS1__L1A0001562063-MSS1",
+    "GF2_PMS1__L1A0001625023-MSS1",
+    "GF2_PMS1__L1A0001680853-MSS1",
+    "GF2_PMS1__L1A0001765570-MSS1",
+    "GF2_PMS1__L1A0001767953-MSS1",
+    "GF2_PMS1__L1A0001793003-MSS1",
+    "GF2_PMS1__L1A0001798942-MSS1",
+    "GF2_PMS1__L1A0001821711-MSS1",
+    "GF2_PMS2__L1A0000564691-MSS2",
+    "GF2_PMS2__L1A0000948183-MSS2",
+    "GF2_PMS2__L1A0001246644-MSS2",
+    "GF2_PMS2__L1A0001396040-MSS2",
+    "GF2_PMS2__L1A0001563129-MSS2",
+    "GF2_PMS2__L1A0001573999-MSS2",
+    "GF2_PMS2__L1A0001708230-MSS2",
+    "GF2_PMS2__L1A0001757317-MSS2",
+    "GF2_PMS2__L1A0001799015-MSS2",
+    "GF2_PMS2__L1A0001838560-MSS2",
+    "GF2_PMS2__L1A0001886305-MSS2"
+  ],
+  "initialization": "public_pretrained",
+  "inner_fold_id": null,
+  "loss": "per_image_CE+0.5Dice+0.25Lovasz_native24_ignore255",
+  "micro_batch": 4,
+  "normalization_provenance": "fixed_existing_preprocessing_constants_no_fold_fitting",
+  "num_workers": 4,
+  "outer_fold_id": 4,
+  "output_dir": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/folds/fold4/d3",
+  "physical_gpu": 0,
+  "plans_manifest": "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/control/data/fold4/plans_manifest.json",
+  "plans_manifest_sha256": "0ec76d0b3be5dc357307bd68b551aa1315678fd8b152b5161cea0f5042f5b29a",
+  "precision": "bfloat16",
+  "pretrained_file": "/archive/hot5/yeqi/pretrained/dino_web_20260914/dinov3_vitl16_pretrain_lvd1689m-8aa4cbdd.pth",
+  "pretrained_sha256": "8aa4cbddda325040fc78db2c272754af6ebe8ff2c55f6ec4f1964d8890f66035",
+  "recovery_interval_updates": 240,
+  "reference_config_file": "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/references/d3_native24.json",
+  "reference_config_sha256": "c1842defa1472ddb817319e1402d5029a045cb7ebe3ff650cf499677642b7537",
+  "retain_complete_recovery": true,
+  "samples_per_epoch": 30720,
+  "scheduler_horizon": 33600,
+  "schema": "native24_oof_dino_single_gpu_v1",
+  "seed": 1337,
+  "source_files": {
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/convnext_pyramid_model.py": "8fec64448ff37df1ee044624eac0137c9c8b2ad453f7f4bcad8dee743c4b17e6",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/convnext_sar_full120_data.py": "119e32870f84c934ec245798fbb6298a150e2ddd7b551c776851ee6338c3400d",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/convnext_sar_model.py": "570fa49069d528980899449508690166610f964da48be46dad8d92002f5d11ac",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/data.py": "58da79b9587a4d0ac781f4de8c33d3fbcaaa0bff76c473e164174f7c213b7341",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dino_web_model.py": "dcaf26f4b76baad01ab82aa99544bc283b26f4fd2154353522750a6c28c79c3d",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dinov2_nir_model.py": "30fbeb410121aa71cbe4796d4eb06ae64b4ae36290a46c5851c8227b7c1301e9",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dinov2_nir_optim.py": "a90160c547c5059cf7d62acc0a46196782ccab5bc020f67d9c128e2e9c251610",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dinov3_sat_nir_data.py": "8547635dba1d38bb192d67ef86245a18335f4090ca1dd8fed951810162ba3b4b",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dinov3_sat_nir_model.py": "0391fa9fc2848326ede358ee6d1ff683ec4aafe60db7bb44a60be158ba5ea389",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dinov3_sat_nir_protocol.py": "420d84790441f2ff0320c18bc8b44bd81dfb783d7686d54d7a88ae8ed6b5e090",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/dual_aux_data.py": "de9ffd3bf734d13ed5d2f28161aaf5556ad9e3741e6c67e6ae22d8f594c9ffac",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/fusionaware_a1.py": "93ecf9979c62088140d776a3b4a9eca376a6193a417155f4cec0992b90f8bd32",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/hrnet_ocr_model.py": "42e6d8425df65a759cf4293b06280bd8d0cef9588af8353eacf069464214c4b2",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/joint_sar_model.py": "f03350c3042773699751a9e5447d64f026bad8a5ec9097704b6c649ea72a2064",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/light_sar_data.py": "3763b9d9f2055184ce01c62e2e1223aef86164cc0ed7d794484d0780664c793e",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/local_detail_model.py": "e674d7692bcfc38e2e537b9af2badefd343a9fa6b0eaa00da5234535ca9b750e",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/losses.py": "0bf3646cc75b709c7de1590cc903498e4427122f0e73929869d56a099bb5bd1b",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/model.py": "5f5b25a3c7c29879b9354936a36626c3b1270cc7a76b4b38c92e5ac884b2b281",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_aligned_protocol.py": "5f2accd2cd2b01ba5f5b2069152ce06dcf44e0e0d7b8e9a9936fd86659072154",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_aligned_proxy.py": "1442945ac7540790c89e1e677042b278471c9cd1fed7ade122c6db26f4f4681e",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_castr.py": "ef0177fcbd6d54ae7b878a5e8eadc1a40fa461bb7303ed4fe53385b766f95b9c",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_data.py": "d6354573a0b9b7b6bff4741f55acb3ef4fa75bf532b379d2d8848fd8305520f9",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_model.py": "f7714cb0afab1c3c663e5bd6fb6aa3c2bc6e09a00c0f14a0f1efe3842fadf0fe",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_neutral_oof.py": "c80193e365a10d203cfeb80a3e4b09e819ad4335a263b6935cb2f5a93d96d012",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_oof_source_protocol.py": "37a4dc59f63f21b775780c9047631a569f7bf32d314f3d4fdd7791f002928f0c",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_rebuild_data.py": "f9c5c52fa254b1c85b85b9551e14fadaf26801b95e611c1dda6c1cd8b3395be2",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_rebuild_model.py": "6157a82446aa849de74b5dffe2b9d4000d3c9c7b4866ec2299125026773f68a6",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_sar_joint_data.py": "80f473e7b38e12ed6198af2ffc868ff9506f88094931ce15ac0d8c32655256b7",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_sar_joint_model.py": "95bd419bc0f22cfd06a5723b5f78d8d101dab27440ccf6dbf9e0eedf51c22d40",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_sar_pilot_data.py": "c02a8958638893f1186dd6de70e845b78cb509625cf414745d27bfc9c79492d8",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/ms75_sar_pilot_model.py": "dffc3c396e7d776eee9f251202d507c2cbd841e490cf136498b39ccb4ec783d6",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/native24_fast_data.py": "37ee1b2e905ddd1450c299a8d2ddb8e390dcd99d232d2764208487d8c18027b5",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/native24_oof_dino.py": "eb8d53214310f6ecca746e6efb1816d7c1848c9c0a044f8395f3f4c65f4e9b72",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/native_sar_adapter.py": "faa9822be5b5e389e350eb0d579746b97e04c33bdbfd08b59680c51be2251fb3",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/runtime.py": "a515a1cece0eee57408292642f0dd8d53391465b8ff976d118ffaa0a4a726a48",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/sar_oct01_models.py": "7519d465def37659e14185d9465452d8da7493c63769779e19533311cf0d5a84",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/sar_route_diagnostics.py": "5dafe0cd68aeb564a938235726585caafbcf2abf5ab3972608d2c4f136c1b847",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/semantic_aux_data.py": "2a626b303b71aa6eb35797d4a83beb9a160538a23369df6813c9fa8cc5b1ba83",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/semantic_aux_model.py": "9fbf4ea351b230b97e0aa994c456b1e5eacd9a6bd55f181a27a9191bb4406729",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/target_dino_data.py": "dd45438436c963e23a148ed800658571b5b91ec68d17cc47383b85021b0e0f0c",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/target_dino_model.py": "5a485ef48cd0dc5e4be52e60d0603f057e644e03479ddf394eb65b1d3a4f3ec5",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tcmmsline3/target_ms75_data.py": "e447b10fa1b8e37049e03a5974ed07dda3cde2bf024b9e63b7b659ca6f478f01",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/audit_convnext_sar_inputs.py": "4e89d78f717ccd4d261840e6f6844d54ba268c6506e54250f1cc3ca495ca5ee2",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/evaluate_convnext_sar.py": "eae9dda86513d5afe11f4bdab06322f137b797f0b6e55081594b4e4c166f7e37",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/evaluate_ms75_rebuild.py": "ee1db8e2f5931502baff5dde3bc0f258d78d74baf78550ab6620ca4d517a8a9e",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/evaluate_ms75_sar_joint.py": "96686ab15cc0c9b3ce1a3a1055ce3c1fdcfa8fae19e0b6e3ca44fec3b5fbf1f5",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/evaluate_ms75_sar_pilot.py": "47fc5353984eded7683c0c4b6c03f9f289f622d3a28ba0065ec893bcdca133a8",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/evaluate_target_dino.py": "72e34ff4ad4faf22c2d178e3f857da8415624656e4c5b1c69f0bc0696d0b34a5",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/launch_without_thp.py": "da2368d8fd9168da19043880ad1104a15826b37df38c94339dabf291f5a8fcdf",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/native24_fivefold_storage.py": "1872ead14a1b70eea9cf7db404699871f225f3437c2a99d86038670838e73602",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/native24_oof_data.py": "1482cc5a1c4f1211a1237db7b297d4685e1761d4e1ce2c60a88bf9247da4b47f",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/run_sar_route_diagnostics.py": "51334f93c9f48d2da153be246f4f7c46cff7e3e81eb2a0001ab93ae6882c5463",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/sar_oct01_common.py": "8644553c7e15e87218ebe6b5c537d42f3f343376d2079ad55dcb7e386e8f4a8e",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/sar_oct01_extension.py": "24f4cbd605da0a14f28a3fc7e44d45dd27412b77a61222da0ad8f2e1cf34eca7",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_convnext_sar.py": "ffcdf7c804bf94e1d042da71e4beacda166c3f4a4841d33cb575b1b02aad1c66",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_ms75_sar_joint.py": "9afb26143b12dd681d1fff85d6b907f49095654a722c99ee59ed11b0f897c841",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_ms75_sar_pilot.py": "c0eb68856cf57d784ebeb002f7a210d1088e6608b140f8dbf6ec4c3a1a35d55f",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_native24_oof_dino.py": "02369994f38c0570387a480c9c388be12e4365a18963850d264daf2ae2b1f801",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_native24_oof_pyramid.py": "fcdb96abde16309aa906f33fd0b763a749e9a22b4b08791818c97c12fc6ed424",
+    "/archive/hot5/yeqi/projects/native24_fivefold_gpu03456_20261015_v1/tools/train_target_dino.py": "e0c2b6aabc1bb53a0d984b30e4ac5048c219df1597d715550a079f78291740f6"
+  },
+  "storage_roots": [
+    "/archive/hot0/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot1/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot2/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot3/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot4/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot5/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads",
+    "/archive/hot6/yeqi/native24_fivefold_gpu03456_20261015_v1/payloads"
+  ],
+  "train_ids": [
+    "GF2_PMS1__L1A0000575925-MSS1",
+    "GF2_PMS1__L1A0000647767-MSS1",
+    "GF2_PMS1__L1A0000647768-MSS1",
+    "GF2_PMS1__L1A0000647770-MSS1",
+    "GF2_PMS1__L1A0000962382-MSS1",
+    "GF2_PMS1__L1A0001015646-MSS1",
+    "GF2_PMS1__L1A0001015648-MSS1",
+    "GF2_PMS1__L1A0001037899-MSS1",
+    "GF2_PMS1__L1A0001094941-MSS1",
+    "GF2_PMS1__L1A0001104323-MSS1",
+    "GF2_PMS1__L1A0001112719-MSS1",
+    "GF2_PMS1__L1A0001217916-MSS1",
+    "GF2_PMS1__L1A0001290139-MSS1",
+    "GF2_PMS1__L1A0001293546-MSS1",
+    "GF2_PMS1__L1A0001335463-MSS1",
+    "GF2_PMS1__L1A0001471230-MSS1",
+    "GF2_PMS1__L1A0001491417-MSS1",
+    "GF2_PMS1__L1A0001491423-MSS1",
+    "GF2_PMS1__L1A0001491484-MSS1",
+    "GF2_PMS1__L1A0001517689-MSS1",
+    "GF2_PMS1__L1A0001537716-MSS1",
+    "GF2_PMS1__L1A0001553848-MSS1",
+    "GF2_PMS1__L1A0001642566-MSS1",
+    "GF2_PMS1__L1A0001647941-MSS1",
+    "GF2_PMS1__L1A0001660727-MSS1",
+    "GF2_PMS1__L1A0001668483-MSS1",
+    "GF2_PMS1__L1A0001680851-MSS1",
+    "GF2_PMS1__L1A0001734328-MSS1",
+    "GF2_PMS1__L1A0001765572-MSS1",
+    "GF2_PMS1__L1A0001791738-MSS1",
+    "GF2_PMS1__L1A0001792971-MSS1",
+    "GF2_PMS1__L1A0001798945-MSS1",
+    "GF2_PMS1__L1A0001910522-MSS1",
+    "GF2_PMS2__L1A0000564692-MSS2",
+    "GF2_PMS2__L1A0000635115-MSS2",
+    "GF2_PMS2__L1A0000647892-MSS2",
+    "GF2_PMS2__L1A0000658636-MSS2",
+    "GF2_PMS2__L1A0000658637-MSS2",
+    "GF2_PMS2__L1A0000736601-MSS2",
+    "GF2_PMS2__L1A0000788763-MSS2",
+    "GF2_PMS2__L1A0000789259-MSS2",
+    "GF2_PMS2__L1A0000851345-MSS2",
+    "GF2_PMS2__L1A0000958144-MSS2",
+    "GF2_PMS2__L1A0000958146-MSS2",
+    "GF2_PMS2__L1A0001015594-MSS2",
+    "GF2_PMS2__L1A0001015596-MSS2",
+    "GF2_PMS2__L1A0001015597-MSS2",
+    "GF2_PMS2__L1A0001028977-MSS2",
+    "GF2_PMS2__L1A0001035795-MSS2",
+    "GF2_PMS2__L1A0001092725-MSS2",
+    "GF2_PMS2__L1A0001116443-MSS2",
+    "GF2_PMS2__L1A0001116444-MSS2",
+    "GF2_PMS2__L1A0001119057-MSS2",
+    "GF2_PMS2__L1A0001140983-MSS2",
+    "GF2_PMS2__L1A0001167480-MSS2",
+    "GF2_PMS2__L1A0001206072-MSS2",
+    "GF2_PMS2__L1A0001246645-MSS2",
+    "GF2_PMS2__L1A0001251799-MSS2",
+    "GF2_PMS2__L1A0001251800-MSS2",
+    "GF2_PMS2__L1A0001336975-MSS2",
+    "GF2_PMS2__L1A0001367842-MSS2",
+    "GF2_PMS2__L1A0001389317-MSS2",
+    "GF2_PMS2__L1A0001393716-MSS2",
+    "GF2_PMS2__L1A0001396034-MSS2",
+    "GF2_PMS2__L1A0001416140-MSS2",
+    "GF2_PMS2__L1A0001433318-MSS2",
+    "GF2_PMS2__L1A0001448894-MSS2",
+    "GF2_PMS2__L1A0001457157-MSS2",
+    "GF2_PMS2__L1A0001465929-MSS2",
+    "GF2_PMS2__L1A0001490885-MSS2",
+    "GF2_PMS2__L1A0001537636-MSS2",
+    "GF2_PMS2__L1A0001537637-MSS2",
+    "GF2_PMS2__L1A0001566653-MSS2",
+    "GF2_PMS2__L1A0001566654-MSS2",
+    "GF2_PMS2__L1A0001574001-MSS2",
+    "GF2_PMS2__L1A0001577567-MSS2",
+    "GF2_PMS2__L1A0001633212-MSS2",
+    "GF2_PMS2__L1A0001642620-MSS2",
+    "GF2_PMS2__L1A0001668457-MSS2",
+    "GF2_PMS2__L1A0001708232-MSS2",
+    "GF2_PMS2__L1A0001708259-MSS2",
+    "GF2_PMS2__L1A0001708261-MSS2",
+    "GF2_PMS2__L1A0001723989-MSS2",
+    "GF2_PMS2__L1A0001723991-MSS2",
+    "GF2_PMS2__L1A0001746797-MSS2",
+    "GF2_PMS2__L1A0001757320-MSS2",
+    "GF2_PMS2__L1A0001757483-MSS2",
+    "GF2_PMS2__L1A0001757484-MSS2",
+    "GF2_PMS2__L1A0001768200-MSS2",
+    "GF2_PMS2__L1A0001787080-MSS2",
+    "GF2_PMS2__L1A0001787089-MSS2",
+    "GF2_PMS2__L1A0001787577-MSS2",
+    "GF2_PMS2__L1A0001799009-MSS2",
+    "GF2_PMS2__L1A0001799010-MSS2",
+    "GF2_PMS2__L1A0001824765-MSS2",
+    "GF2_PMS2__L1A0001876775-MSS2"
+  ],
+  "train_scene_ids": [
+    "GF2_PMS1__L1A0000575925-MSS1",
+    "GF2_PMS1__L1A0000647767-MSS1",
+    "GF2_PMS1__L1A0000647768-MSS1",
+    "GF2_PMS1__L1A0000647770-MSS1",
+    "GF2_PMS1__L1A0000962382-MSS1",
+    "GF2_PMS1__L1A0001015646-MSS1",
+    "GF2_PMS1__L1A0001015648-MSS1",
+    "GF2_PMS1__L1A0001037899-MSS1",
+    "GF2_PMS1__L1A0001094941-MSS1",
+    "GF2_PMS1__L1A0001104323-MSS1",
+    "GF2_PMS1__L1A0001112719-MSS1",
+    "GF2_PMS1__L1A0001217916-MSS1",
+    "GF2_PMS1__L1A0001290139-MSS1",
+    "GF2_PMS1__L1A0001293546-MSS1",
+    "GF2_PMS1__L1A0001335463-MSS1",
+    "GF2_PMS1__L1A0001471230-MSS1",
+    "GF2_PMS1__L1A0001491417-MSS1",
+    "GF2_PMS1__L1A0001491423-MSS1",
+    "GF2_PMS1__L1A0001491484-MSS1",
+    "GF2_PMS1__L1A0001517689-MSS1",
+    "GF2_PMS1__L1A0001537716-MSS1",
+    "GF2_PMS1__L1A0001553848-MSS1",
+    "GF2_PMS1__L1A0001642566-MSS1",
+    "GF2_PMS1__L1A0001647941-MSS1",
+    "GF2_PMS1__L1A0001660727-MSS1",
+    "GF2_PMS1__L1A0001668483-MSS1",
+    "GF2_PMS1__L1A0001680851-MSS1",
+    "GF2_PMS1__L1A0001734328-MSS1",
+    "GF2_PMS1__L1A0001765572-MSS1",
+    "GF2_PMS1__L1A0001791738-MSS1",
+    "GF2_PMS1__L1A0001792971-MSS1",
+    "GF2_PMS1__L1A0001798945-MSS1",
+    "GF2_PMS1__L1A0001910522-MSS1",
+    "GF2_PMS2__L1A0000564692-MSS2",
+    "GF2_PMS2__L1A0000635115-MSS2",
+    "GF2_PMS2__L1A0000647892-MSS2",
+    "GF2_PMS2__L1A0000658636-MSS2",
+    "GF2_PMS2__L1A0000658637-MSS2",
+    "GF2_PMS2__L1A0000736601-MSS2",
+    "GF2_PMS2__L1A0000788763-MSS2",
+    "GF2_PMS2__L1A0000789259-MSS2",
+    "GF2_PMS2__L1A0000851345-MSS2",
+    "GF2_PMS2__L1A0000958144-MSS2",
+    "GF2_PMS2__L1A0000958146-MSS2",
+    "GF2_PMS2__L1A0001015594-MSS2",
+    "GF2_PMS2__L1A0001015596-MSS2",
+    "GF2_PMS2__L1A0001015597-MSS2",
+    "GF2_PMS2__L1A0001028977-MSS2",
+    "GF2_PMS2__L1A0001035795-MSS2",
+    "GF2_PMS2__L1A0001092725-MSS2",
+    "GF2_PMS2__L1A0001116443-MSS2",
+    "GF2_PMS2__L1A0001116444-MSS2",
+    "GF2_PMS2__L1A0001119057-MSS2",
+    "GF2_PMS2__L1A0001140983-MSS2",
+    "GF2_PMS2__L1A0001167480-MSS2",
+    "GF2_PMS2__L1A0001206072-MSS2",
+    "GF2_PMS2__L1A0001246645-MSS2",
+    "GF2_PMS2__L1A0001251799-MSS2",
+    "GF2_PMS2__L1A0001251800-MSS2",
+    "GF2_PMS2__L1A0001336975-MSS2",
+    "GF2_PMS2__L1A0001367842-MSS2",
+    "GF2_PMS2__L1A0001389317-MSS2",
+    "GF2_PMS2__L1A0001393716-MSS2",
+    "GF2_PMS2__L1A0001396034-MSS2",
+    "GF2_PMS2__L1A0001416140-MSS2",
+    "GF2_PMS2__L1A0001433318-MSS2",
+    "GF2_PMS2__L1A0001448894-MSS2",
+    "GF2_PMS2__L1A0001457157-MSS2",
+    "GF2_PMS2__L1A0001465929-MSS2",
+    "GF2_PMS2__L1A0001490885-MSS2",
+    "GF2_PMS2__L1A0001537636-MSS2",
+    "GF2_PMS2__L1A0001537637-MSS2",
+    "GF2_PMS2__L1A0001566653-MSS2",
+    "GF2_PMS2__L1A0001566654-MSS2",
+    "GF2_PMS2__L1A0001574001-MSS2",
+    "GF2_PMS2__L1A0001577567-MSS2",
+    "GF2_PMS2__L1A0001633212-MSS2",
+    "GF2_PMS2__L1A0001642620-MSS2",
+    "GF2_PMS2__L1A0001668457-MSS2",
+    "GF2_PMS2__L1A0001708232-MSS2",
+    "GF2_PMS2__L1A0001708259-MSS2",
+    "GF2_PMS2__L1A0001708261-MSS2",
+    "GF2_PMS2__L1A0001723989-MSS2",
+    "GF2_PMS2__L1A0001723991-MSS2",
+    "GF2_PMS2__L1A0001746797-MSS2",
+    "GF2_PMS2__L1A0001757320-MSS2",
+    "GF2_PMS2__L1A0001757483-MSS2",
+    "GF2_PMS2__L1A0001757484-MSS2",
+    "GF2_PMS2__L1A0001768200-MSS2",
+    "GF2_PMS2__L1A0001787080-MSS2",
+    "GF2_PMS2__L1A0001787089-MSS2",
+    "GF2_PMS2__L1A0001787577-MSS2",
+    "GF2_PMS2__L1A0001799009-MSS2",
+    "GF2_PMS2__L1A0001799010-MSS2",
+    "GF2_PMS2__L1A0001824765-MSS2",
+    "GF2_PMS2__L1A0001876775-MSS2"
+  ],
+  "updates_per_epoch": 480,
+  "variant": "v3l",
+  "warmup_updates": 2000
+}
